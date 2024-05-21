@@ -5,7 +5,9 @@
 package apresentacao;
 
 
+import java.util.TimerTask;
 import javax.swing.JOptionPane;
+import javax.swing.Timer;
 import modelo.*;
 /**
  *
@@ -37,6 +39,16 @@ public class frmFinal extends javax.swing.JDialog
         }
         
         
+        new java.util.Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                //executar ação aqui
+            btnFinalizar.doClick();
+            }
+        }, 7000);
+
+        
+        
     }
 
     /**
@@ -49,7 +61,7 @@ public class frmFinal extends javax.swing.JDialog
     private void initComponents()
     {
 
-        jButton2 = new javax.swing.JButton();
+        btnFinalizar = new javax.swing.JButton();
         lblTotalRespo = new javax.swing.JLabel();
         lblNome = new javax.swing.JLabel();
         lblAcertos = new javax.swing.JLabel();
@@ -63,15 +75,15 @@ public class frmFinal extends javax.swing.JDialog
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton2.setText("finalizar");
-        jButton2.addActionListener(new java.awt.event.ActionListener()
+        btnFinalizar.setText("finalizar");
+        btnFinalizar.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton2ActionPerformed(evt);
+                btnFinalizarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 410, 121, 39));
+        getContentPane().add(btnFinalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 410, 121, 39));
         getContentPane().add(lblTotalRespo, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 917, 449, 20));
 
         lblNome.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
@@ -88,7 +100,7 @@ public class frmFinal extends javax.swing.JDialog
         imgParabens.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\Aps\\src\\img\\img1.gif")); // NOI18N
         imgParabens.setText("jLabel1");
         imgParabens.setToolTipText("");
-        getContentPane().add(imgParabens, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 540, 170, 140));
+        getContentPane().add(imgParabens, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 200, 480, 360));
 
         imgOutro.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\Aps\\src\\img\\img2.gif")); // NOI18N
         imgOutro.setText("jLabel1");
@@ -107,23 +119,28 @@ public class frmFinal extends javax.swing.JDialog
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
-    {//GEN-HEADEREND:event_jButton2ActionPerformed
+    private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnFinalizarActionPerformed
+    {//GEN-HEADEREND:event_btnFinalizarActionPerformed
         frmInicial frmI = new frmInicial(null, true);
         this.setVisible(false);
         frmI.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnFinalizarActionPerformed
 
     private void btnMostrarDadosActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnMostrarDadosActionPerformed
     {//GEN-HEADEREND:event_btnMostrarDadosActionPerformed
 
-        StringBuilder sb = new StringBuilder();
-        for (Visitantes visitante : Visitantes.getListaVisitantes())
-        {
-            sb.append(visitante.toString()).append("\n");
-        }
-        
-        JOptionPane.showMessageDialog(null, sb);
+    // Cria uma instância de StringBuilder para construir uma string 
+        // StringBuilder é uma classe do pacote java.lang.
+    StringBuilder sb = new StringBuilder(); 
+
+    // Vai ate a lista de visitantes obtida pelo método estático getListaVisitantes()
+    for (Visitantes visitante : Visitantes.getListaVisitantes()) 
+    {
+    // Adiciona a representação em string de cada visitante ao StringBuilder, seguida por uma nova linha
+    sb.append(visitante.toString()).append("\n"); 
+    }
+    // Exibe uma caixa de diálogo com o conteúdo do StringBuilder, que contém as informações dos visitantes
+    JOptionPane.showMessageDialog(null, sb); 
 
     }//GEN-LAST:event_btnMostrarDadosActionPerformed
 
@@ -186,10 +203,10 @@ public class frmFinal extends javax.swing.JDialog
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnFinalizar;
     private javax.swing.JButton btnMostrarDados;
     private javax.swing.JLabel imgOutro;
     private javax.swing.JLabel imgParabens;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel lblAcertos;
     private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblSituacao;

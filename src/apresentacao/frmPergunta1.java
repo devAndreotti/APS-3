@@ -38,14 +38,12 @@ public class frmPergunta1 extends javax.swing.JDialog
     {
 
         lbl = new javax.swing.JLabel();
-        lblNome = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnProximo = new javax.swing.JButton();
         btnQ = new javax.swing.JButton();
         btnW = new javax.swing.JButton();
         btnE = new javax.swing.JButton();
         lblPergunta1 = new javax.swing.JLabel();
         txfResposta1 = new javax.swing.JTextField();
-        txfNome = new javax.swing.JTextField();
         lblVF = new javax.swing.JLabel();
         btnR = new javax.swing.JButton();
         btnT = new javax.swing.JButton();
@@ -78,14 +76,12 @@ public class frmPergunta1 extends javax.swing.JDialog
         lbl.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 36)); // NOI18N
         lbl.setText("Vamos começar o questionario");
 
-        lblNome.setText("Digite seu nome");
-
-        jButton1.setText("proxima");
-        jButton1.addActionListener(new java.awt.event.ActionListener()
+        btnProximo.setText("proxima");
+        btnProximo.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton1ActionPerformed(evt);
+                btnProximoActionPerformed(evt);
             }
         });
 
@@ -108,6 +104,13 @@ public class frmPergunta1 extends javax.swing.JDialog
         });
 
         btnE.setText("E");
+        btnE.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnEActionPerformed(evt);
+            }
+        });
 
         lblPergunta1.setText("Pergunta 1: A afirmação a seguir é verdadeira ou falsa?  A missão de exploração mais longa realizada por uma sonda veicular durou 6 anos. ");
 
@@ -123,6 +126,13 @@ public class frmPergunta1 extends javax.swing.JDialog
         });
 
         btnT.setText("T");
+        btnT.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnTActionPerformed(evt);
+            }
+        });
 
         btnO.setText("O");
         btnO.addActionListener(new java.awt.event.ActionListener()
@@ -143,8 +153,22 @@ public class frmPergunta1 extends javax.swing.JDialog
         });
 
         btnY.setText("Y");
+        btnY.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnYActionPerformed(evt);
+            }
+        });
 
         btnU.setText("U");
+        btnU.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnUActionPerformed(evt);
+            }
+        });
 
         btnI.setText("I");
         btnI.addActionListener(new java.awt.event.ActionListener()
@@ -183,6 +207,13 @@ public class frmPergunta1 extends javax.swing.JDialog
         });
 
         btnH.setText("H");
+        btnH.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnHActionPerformed(evt);
+            }
+        });
 
         btnJ.setText("J");
         btnJ.addActionListener(new java.awt.event.ActionListener()
@@ -203,8 +234,22 @@ public class frmPergunta1 extends javax.swing.JDialog
         });
 
         btnA.setText("A");
+        btnA.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnAActionPerformed(evt);
+            }
+        });
 
         btnS.setText("S");
+        btnS.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnSActionPerformed(evt);
+            }
+        });
 
         btnD.setText("D");
         btnD.addActionListener(new java.awt.event.ActionListener()
@@ -216,12 +261,40 @@ public class frmPergunta1 extends javax.swing.JDialog
         });
 
         btnN.setText("N");
+        btnN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnNActionPerformed(evt);
+            }
+        });
 
         btnM.setText("M");
+        btnM.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnMActionPerformed(evt);
+            }
+        });
 
         btnZ.setText("Z");
+        btnZ.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnZActionPerformed(evt);
+            }
+        });
 
         btnX.setText("X");
+        btnX.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnXActionPerformed(evt);
+            }
+        });
 
         btnC.setText("C");
         btnC.addActionListener(new java.awt.event.ActionListener()
@@ -251,90 +324,101 @@ public class frmPergunta1 extends javax.swing.JDialog
         });
 
         btnApagar.setText("Backspace");
+        btnApagar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnApagarActionPerformed(evt);
+            }
+        });
 
         btnEspaço.setText("Space");
+        btnEspaço.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnEspaçoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(73, 398, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnQ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnW, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnE, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnR, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnT, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnY, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnU, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnI, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnO, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnP, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47)
-                        .addComponent(btnApagar, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(btnA, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnZ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnX, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnV, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnB, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnN, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnM, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnS, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnD, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnF, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnG, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnH, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnJ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnK, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnL, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(btnEspaço, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(214, 214, 214))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(376, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(73, 376, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnQ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnW, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnE, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnR, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnT, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnY, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnU, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnI, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnO, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnP, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(47, 47, 47)
+                                .addComponent(btnApagar, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(37, 37, 37)
+                                .addComponent(btnA, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(btnZ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnX, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnV, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnB, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnN, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnM, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(btnS, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnD, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnF, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnG, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnH, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnJ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnK, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnL, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(btnEspaço, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(214, 214, 214))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnProximo, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(58, 58, 58))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(461, 461, 461))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txfResposta1, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblPergunta1, javax.swing.GroupLayout.PREFERRED_SIZE, 795, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txfNome, javax.swing.GroupLayout.PREFERRED_SIZE, 781, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(309, 309, 309)
                                 .addComponent(lblVF, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -346,15 +430,11 @@ public class frmPergunta1 extends javax.swing.JDialog
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1))
+                        .addComponent(btnProximo))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addComponent(lbl)
-                        .addGap(57, 57, 57)
-                        .addComponent(lblNome)
-                        .addGap(44, 44, 44)
-                        .addComponent(txfNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 112, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 253, Short.MAX_VALUE)
                         .addComponent(lblPergunta1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblVF)
@@ -402,10 +482,10 @@ public class frmPergunta1 extends javax.swing.JDialog
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
-    {//GEN-HEADEREND:event_jButton1ActionPerformed
+    private void btnProximoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnProximoActionPerformed
+    {//GEN-HEADEREND:event_btnProximoActionPerformed
         Estaticos.SOMAACERTOS = 0;
-        Estaticos.NOME = txfNome.getText();
+//        Estaticos.NOME = txfNome.getText();
         Controle controle = new Controle(txfResposta1.getText());
         if(txfResposta1.equals("verdadeiro")){
             Estaticos.RESP1 = "erro";
@@ -427,76 +507,76 @@ public class frmPergunta1 extends javax.swing.JDialog
             JOptionPane.showMessageDialog(null, Estaticos.MENSAGEM);
         }
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnProximoActionPerformed
 
     private void btnRActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnRActionPerformed
     {//GEN-HEADEREND:event_btnRActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "r");
     }//GEN-LAST:event_btnRActionPerformed
 
     private void btnOActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnOActionPerformed
     {//GEN-HEADEREND:event_btnOActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "o");
     }//GEN-LAST:event_btnOActionPerformed
 
     private void btnIActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnIActionPerformed
     {//GEN-HEADEREND:event_btnIActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "i");
     }//GEN-LAST:event_btnIActionPerformed
 
     private void btnPActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnPActionPerformed
     {//GEN-HEADEREND:event_btnPActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "p");
     }//GEN-LAST:event_btnPActionPerformed
 
     private void btnFActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnFActionPerformed
     {//GEN-HEADEREND:event_btnFActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "f");
     }//GEN-LAST:event_btnFActionPerformed
 
     private void btnLActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnLActionPerformed
     {//GEN-HEADEREND:event_btnLActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "l");
     }//GEN-LAST:event_btnLActionPerformed
 
     private void btnKActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnKActionPerformed
     {//GEN-HEADEREND:event_btnKActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "k");
     }//GEN-LAST:event_btnKActionPerformed
 
     private void btnDActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnDActionPerformed
     {//GEN-HEADEREND:event_btnDActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "d");
     }//GEN-LAST:event_btnDActionPerformed
 
     private void btnGActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnGActionPerformed
     {//GEN-HEADEREND:event_btnGActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "g");
     }//GEN-LAST:event_btnGActionPerformed
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnCActionPerformed
     {//GEN-HEADEREND:event_btnCActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "c");
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnVActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVActionPerformed
     {//GEN-HEADEREND:event_btnVActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "v");
     }//GEN-LAST:event_btnVActionPerformed
 
     private void btnBActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnBActionPerformed
     {//GEN-HEADEREND:event_btnBActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "b");
     }//GEN-LAST:event_btnBActionPerformed
 
     private void btnJActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnJActionPerformed
     {//GEN-HEADEREND:event_btnJActionPerformed
-        // TODO add your handling code here:
+        txfResposta1.setText(txfResposta1.getText() + "j");
     }//GEN-LAST:event_btnJActionPerformed
 
     private void btnQActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnQActionPerformed
     {//GEN-HEADEREND:event_btnQActionPerformed
-//        txfNome.setText(txfNome.getText() + "q");
+        txfResposta1.setText(txfResposta1.getText() + "q");
 //      if (txfNome.isFocusOwner()) 
 //      {
 //             txfNome.setText(txfNome.getText() + "q");
@@ -510,23 +590,88 @@ public class frmPergunta1 extends javax.swing.JDialog
 //             txfResposta1.setText(txfResposta1.getText() + "q");
 //         }
         
-         btnQ.setText("q");
-         
-           Component focusedComponent = KeyboardFocusManager.getCurrentKeyboardFocusManager().getFocusOwner();
-                if (focusedComponent instanceof JTextField) {
-                    JTextField focusedTextField = (JTextField) focusedComponent;
-                    focusedTextField.setText(focusedTextField.getText() + "q");
-                 }
-                    
+//         btnQ.setText("q");
+//         
+//           Component focusedComponent = KeyboardFocusManager.getCurrentKeyboardFocusManager().getFocusOwner();
+//                if (focusedComponent instanceof JTextField) {
+//                    JTextField focusedTextField = (JTextField) focusedComponent;
+//                    focusedTextField.setText(focusedTextField.getText() + "q");
+//                 }
+//                    
  
 
     }//GEN-LAST:event_btnQActionPerformed
    
     private void btnWActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnWActionPerformed
     {//GEN-HEADEREND:event_btnWActionPerformed
-        
+        txfResposta1.setText(txfResposta1.getText() + "w");        
 
     }//GEN-LAST:event_btnWActionPerformed
+
+    private void btnEActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnEActionPerformed
+    {//GEN-HEADEREND:event_btnEActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + "e");
+    }//GEN-LAST:event_btnEActionPerformed
+
+    private void btnTActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnTActionPerformed
+    {//GEN-HEADEREND:event_btnTActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + "t");
+    }//GEN-LAST:event_btnTActionPerformed
+
+    private void btnYActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnYActionPerformed
+    {//GEN-HEADEREND:event_btnYActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + "y");
+    }//GEN-LAST:event_btnYActionPerformed
+
+    private void btnUActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnUActionPerformed
+    {//GEN-HEADEREND:event_btnUActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + "u");
+    }//GEN-LAST:event_btnUActionPerformed
+
+    private void btnAActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnAActionPerformed
+    {//GEN-HEADEREND:event_btnAActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + "a");
+    }//GEN-LAST:event_btnAActionPerformed
+
+    private void btnSActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnSActionPerformed
+    {//GEN-HEADEREND:event_btnSActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + "s");
+    }//GEN-LAST:event_btnSActionPerformed
+
+    private void btnHActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnHActionPerformed
+    {//GEN-HEADEREND:event_btnHActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + "h");
+    }//GEN-LAST:event_btnHActionPerformed
+
+    private void btnZActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnZActionPerformed
+    {//GEN-HEADEREND:event_btnZActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + "z");
+    }//GEN-LAST:event_btnZActionPerformed
+
+    private void btnXActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnXActionPerformed
+    {//GEN-HEADEREND:event_btnXActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + "x");
+    }//GEN-LAST:event_btnXActionPerformed
+
+    private void btnNActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnNActionPerformed
+    {//GEN-HEADEREND:event_btnNActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + "n");
+    }//GEN-LAST:event_btnNActionPerformed
+
+    private void btnMActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnMActionPerformed
+    {//GEN-HEADEREND:event_btnMActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + "m");
+    }//GEN-LAST:event_btnMActionPerformed
+
+    private void btnApagarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnApagarActionPerformed
+    {//GEN-HEADEREND:event_btnApagarActionPerformed
+        txfResposta1.setText(txfResposta1.getText().substring(0, txfResposta1.getText().length() - 1));
+    }//GEN-LAST:event_btnApagarActionPerformed
+
+    private void btnEspaçoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnEspaçoActionPerformed
+    {//GEN-HEADEREND:event_btnEspaçoActionPerformed
+        txfResposta1.setText(txfResposta1.getText() + " ");
+    }//GEN-LAST:event_btnEspaçoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -605,6 +750,7 @@ public class frmPergunta1 extends javax.swing.JDialog
     private javax.swing.JButton btnN;
     private javax.swing.JButton btnO;
     private javax.swing.JButton btnP;
+    private javax.swing.JButton btnProximo;
     private javax.swing.JButton btnQ;
     private javax.swing.JButton btnR;
     private javax.swing.JButton btnS;
@@ -615,12 +761,9 @@ public class frmPergunta1 extends javax.swing.JDialog
     private javax.swing.JButton btnX;
     private javax.swing.JButton btnY;
     private javax.swing.JButton btnZ;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel lbl;
-    private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblPergunta1;
     private javax.swing.JLabel lblVF;
-    private javax.swing.JTextField txfNome;
     private javax.swing.JTextField txfResposta1;
     // End of variables declaration//GEN-END:variables
 }

@@ -23,19 +23,23 @@ public class Visitantes extends AbsPropriedades
     }
 
     
-    
-    public static void adicionarVisitante(Visitantes visitante) {
+    // Método estático para adicionar um visitante à lista
+    public static void adicionarVisitante(Visitantes visitante) 
+    {
         listaVisitantes.add(visitante);
-     }
+    }
 
-    public static List<Visitantes> getListaVisitantes() {
+    // Método estático para obter a lista de visitantes
+    public static List<Visitantes> getListaVisitantes() 
+    {
         return listaVisitantes;
     }
 
 
-
+    // Método sobrescrito para retornar uma representação em string do visitante
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return "Nome: " + nome + ", resposta 1: " + resp1 + ", resposta 2: " + resp2 +
                  ", resposta 3: " + resp3 + ", resposta 4: " + resp4 + ", resposta 5: " + resp5 + 
                 ", total de acerto: "  + Estaticos.ACERTOS;

@@ -87,9 +87,9 @@ public class frmInicial extends javax.swing.JDialog
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
     {//GEN-HEADEREND:event_jButton1ActionPerformed
-        frmPergunta1 frm1 = new frmPergunta1(null, true);
+        frmNome frmN = new frmNome(null, true);
         this.setVisible(false);
-        frm1.setVisible(true);
+        frmN.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
