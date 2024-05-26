@@ -40,9 +40,9 @@ public class Visitantes extends AbsPropriedades
     @Override
     public String toString() 
     {
-        return "Nome: " + nome + ", resposta 1: " + resp1 + ", resposta 2: " + resp2 +
-                 ", resposta 3: " + resp3 + ", resposta 4: " + resp4 + ", resposta 5: " + resp5 + 
-                ", total de acerto: "  + Estaticos.ACERTOS;
+        return "Nome: " + nome + ", Resposta 1: " + resp1 + ", Resposta 2: " + resp2 +
+                 ", Resposta 3: " + resp3 + ", Resposta 4: " + resp4 + ", Resposta 5: " + resp5 + 
+                ", Total de acerto: "  + Estaticos.SOMAACERTOS;
     }
 
  

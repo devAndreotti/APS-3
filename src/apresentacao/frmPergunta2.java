@@ -4,9 +4,8 @@
  */
 package apresentacao;
 
-import javax.swing.JOptionPane;
-import modelo.Controle;
-import modelo.Visitantes;
+
+import modelo.*;
 
 /**
  *
@@ -42,222 +41,228 @@ public class frmPergunta2 extends javax.swing.JDialog
         gbtnP3 = new javax.swing.ButtonGroup();
         gbtnP4 = new javax.swing.ButtonGroup();
         gbtnP5 = new javax.swing.ButtonGroup();
-        jLabel1 = new javax.swing.JLabel();
-        rbdC2 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jLabel2 = new javax.swing.JLabel();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
-        jLabel3 = new javax.swing.JLabel();
-        rbdE4 = new javax.swing.JRadioButton();
-        rbdEr4 = new javax.swing.JRadioButton();
-        rbdC4 = new javax.swing.JRadioButton();
-        jLabel4 = new javax.swing.JLabel();
-        rdbE5 = new javax.swing.JRadioButton();
-        rdbE2 = new javax.swing.JRadioButton();
-        rbdC = new javax.swing.JRadioButton();
-        rbdC3 = new javax.swing.JRadioButton();
+        lblPergunta2 = new javax.swing.JLabel();
+        rbdP2A = new javax.swing.JRadioButton();
+        rbdP2B = new javax.swing.JRadioButton();
+        rbdP2C = new javax.swing.JRadioButton();
+        lblPergunta3 = new javax.swing.JLabel();
+        rbdP3B = new javax.swing.JRadioButton();
+        rbdP3C = new javax.swing.JRadioButton();
+        lblPergunta4 = new javax.swing.JLabel();
+        rbdP4A = new javax.swing.JRadioButton();
+        rbdP4B = new javax.swing.JRadioButton();
+        rbdP4C = new javax.swing.JRadioButton();
+        lblPergunta5 = new javax.swing.JLabel();
+        rbdP5A = new javax.swing.JRadioButton();
+        rbdP5B = new javax.swing.JRadioButton();
+        rbdP5C = new javax.swing.JRadioButton();
+        rbdP3A = new javax.swing.JRadioButton();
         lblTotalRespo = new javax.swing.JLabel();
         lblResposta = new javax.swing.JLabel();
         lblMostrarResultado = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        btnContinuar = new javax.swing.JButton();
         lblacertos = new javax.swing.JLabel();
+        lblFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMaximumSize(null);
+        setMinimumSize(new java.awt.Dimension(1525, 790));
+        setPreferredSize(new java.awt.Dimension(1525, 790));
+        setResizable(false);
+        getContentPane().setLayout(null);
 
-        jLabel1.setText("Pergunta 2: Qual foi o primeiro rover a pousar em Marte? ");
+        lblPergunta2.setBackground(new java.awt.Color(74, 43, 23));
+        lblPergunta2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblPergunta2.setForeground(new java.awt.Color(164, 127, 85));
+        lblPergunta2.setText("Pergunta 2: Qual foi o primeiro rover a pousar em Marte? ");
+        getContentPane().add(lblPergunta2);
+        lblPergunta2.setBounds(110, 60, 470, 21);
 
-        gbtnP2.add(rbdC2);
-        rbdC2.setText("a) Spirit");
+        rbdP2A.setBackground(new java.awt.Color(74, 43, 23));
+        gbtnP2.add(rbdP2A);
+        rbdP2A.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP2A.setForeground(new java.awt.Color(164, 127, 85));
+        rbdP2A.setText("a) Spirit");
+        rbdP2A.setBorder(null);
+        getContentPane().add(rbdP2A);
+        rbdP2A.setBounds(120, 100, 110, 21);
 
-        gbtnP2.add(jRadioButton2);
-        jRadioButton2.setText("b) Perseverance");
+        rbdP2B.setBackground(new java.awt.Color(74, 43, 23));
+        gbtnP2.add(rbdP2B);
+        rbdP2B.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP2B.setForeground(new java.awt.Color(164, 127, 85));
+        rbdP2B.setText("b) Perseverance");
+        rbdP2B.setBorder(null);
+        getContentPane().add(rbdP2B);
+        rbdP2B.setBounds(120, 130, 149, 21);
 
-        gbtnP2.add(jRadioButton3);
-        jRadioButton3.setText("c) Sojurner");
+        rbdP2C.setBackground(new java.awt.Color(74, 43, 23));
+        gbtnP2.add(rbdP2C);
+        rbdP2C.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP2C.setForeground(new java.awt.Color(164, 127, 85));
+        rbdP2C.setText("c) Sojurner");
+        rbdP2C.setBorder(null);
+        getContentPane().add(rbdP2C);
+        rbdP2C.setBounds(120, 160, 116, 21);
 
-        jLabel2.setText("Pergunta 3: Qual dessas sondas teve o primeiro drone de apoio a voar em Marte? ");
+        lblPergunta3.setBackground(new java.awt.Color(74, 43, 23));
+        lblPergunta3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblPergunta3.setForeground(new java.awt.Color(164, 127, 85));
+        lblPergunta3.setText("Pergunta 3: Qual dessas sondas teve o primeiro drone de apoio a voar em Marte? ");
+        getContentPane().add(lblPergunta3);
+        lblPergunta3.setBounds(870, 60, 630, 21);
 
-        gbtnP3.add(jRadioButton4);
-        jRadioButton4.setText("b) Curiosity");
+        rbdP3B.setBackground(new java.awt.Color(74, 43, 23));
+        gbtnP3.add(rbdP3B);
+        rbdP3B.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP3B.setForeground(new java.awt.Color(164, 127, 85));
+        rbdP3B.setText("b) Curiosity");
+        rbdP3B.setBorder(null);
+        getContentPane().add(rbdP3B);
+        rbdP3B.setBounds(880, 130, 150, 21);
 
-        gbtnP3.add(jRadioButton6);
-        jRadioButton6.setText("c) Opportunity");
+        rbdP3C.setBackground(new java.awt.Color(74, 43, 23));
+        gbtnP3.add(rbdP3C);
+        rbdP3C.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP3C.setForeground(new java.awt.Color(164, 127, 85));
+        rbdP3C.setText("c) Opportunity");
+        rbdP3C.setBorder(null);
+        getContentPane().add(rbdP3C);
+        rbdP3C.setBounds(880, 160, 150, 21);
 
-        jLabel3.setText("Pergunta 4: Qual foi a região designada para o pouso da sonda Curiosity em 2012? ");
+        lblPergunta4.setBackground(new java.awt.Color(74, 43, 23));
+        lblPergunta4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblPergunta4.setForeground(new java.awt.Color(74, 43, 23));
+        lblPergunta4.setText("Pergunta 4: Qual foi a região designada para o pouso da sonda Curiosity em 2012? ");
+        getContentPane().add(lblPergunta4);
+        lblPergunta4.setBounds(110, 390, 630, 21);
 
-        gbtnP4.add(rbdE4);
-        rbdE4.setText("a) Cratera de Jazero");
+        rbdP4A.setBackground(new java.awt.Color(164, 127, 85));
+        gbtnP4.add(rbdP4A);
+        rbdP4A.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP4A.setForeground(new java.awt.Color(74, 43, 23));
+        rbdP4A.setText("a) Cratera de Jazero");
+        rbdP4A.setBorder(null);
+        getContentPane().add(rbdP4A);
+        rbdP4A.setBounds(130, 430, 190, 21);
 
-        gbtnP4.add(rbdEr4);
-        rbdEr4.setText("b) Ares Vallis");
+        rbdP4B.setBackground(new java.awt.Color(164, 127, 85));
+        gbtnP4.add(rbdP4B);
+        rbdP4B.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP4B.setForeground(new java.awt.Color(74, 43, 23));
+        rbdP4B.setText("b) Ares Vallis");
+        rbdP4B.setBorder(null);
+        getContentPane().add(rbdP4B);
+        rbdP4B.setBounds(130, 460, 160, 21);
 
-        gbtnP4.add(rbdC4);
-        rbdC4.setText("c) Cratera Gale");
-
-        jLabel4.setText("Pergunta 5: Em 2020 quantas sondas foram lançadas a marte? ");
-
-        gbtnP5.add(rdbE5);
-        rdbE5.setText("a) 4");
-
-        gbtnP5.add(rdbE2);
-        rdbE2.setText("b) 1");
-
-        gbtnP5.add(rbdC);
-        rbdC.setText("c) 3");
-
-        gbtnP3.add(rbdC3);
-        rbdC3.setText("a) Perseverance");
-
-        jButton2.setText("proximo");
-        jButton2.addActionListener(new java.awt.event.ActionListener()
+        rbdP4C.setBackground(new java.awt.Color(164, 127, 85));
+        gbtnP4.add(rbdP4C);
+        rbdP4C.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP4C.setForeground(new java.awt.Color(74, 43, 23));
+        rbdP4C.setText("c) Cratera Gale");
+        rbdP4C.setBorder(null);
+        rbdP4C.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton2ActionPerformed(evt);
+                rbdP4CActionPerformed(evt);
             }
         });
+        getContentPane().add(rbdP4C);
+        rbdP4C.setBounds(130, 490, 170, 21);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(240, 240, 240)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(rbdC2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(105, 105, 105)
-                        .addComponent(jRadioButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 327, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(153, 153, 153)
-                            .addComponent(jRadioButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 463, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(rbdC3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(59, 59, 59)
-                        .addComponent(jRadioButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(85, 85, 85)))
-                .addGap(149, 149, 149))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblResposta, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(100, 100, 100))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(rbdC, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(282, 282, 282))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblacertos, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(230, 230, 230)
-                        .addComponent(lblMostrarResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(205, 205, 205)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(68, 68, 68)
-                                .addComponent(rbdE4)
-                                .addGap(31, 31, 31)
-                                .addComponent(rbdEr4, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(189, 189, 189)
-                        .addComponent(lblTotalRespo, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(830, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(378, 378, 378)
-                .addComponent(rbdC4, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(rdbE5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rdbE2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(102, 102, 102))
-                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(124, 124, 124))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(jLabel1)
-                .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rbdC2)
-                    .addComponent(jRadioButton2))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(38, 38, 38)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jRadioButton4)
-                                    .addComponent(rbdC3))
-                                .addGap(25, 25, 25)
-                                .addComponent(jRadioButton6))
-                            .addComponent(jRadioButton3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
-                        .addComponent(jLabel3)
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(rbdE4)
-                            .addComponent(rbdEr4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbdC4)
-                        .addGap(104, 104, 104)
-                        .addComponent(lblResposta)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(104, 104, 104)
-                                .addComponent(lblTotalRespo)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton2)
-                                .addGap(32, 32, 32)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblacertos)
-                            .addComponent(lblMostrarResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(296, 296, 296)
-                        .addComponent(jLabel4)
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(rdbE5)
-                            .addComponent(rdbE2))
-                        .addGap(18, 18, 18)
-                        .addComponent(rbdC)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(45, 45, 45))
-        );
+        lblPergunta5.setBackground(new java.awt.Color(74, 43, 23));
+        lblPergunta5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblPergunta5.setForeground(new java.awt.Color(74, 43, 23));
+        lblPergunta5.setText("Pergunta 5: Em 2020 quantas sondas foram lançadas a marte? ");
+        getContentPane().add(lblPergunta5);
+        lblPergunta5.setBounds(870, 390, 500, 21);
+
+        rbdP5A.setBackground(new java.awt.Color(164, 127, 85));
+        gbtnP5.add(rbdP5A);
+        rbdP5A.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP5A.setForeground(new java.awt.Color(74, 43, 23));
+        rbdP5A.setText("a) 4");
+        rbdP5A.setBorder(null);
+        getContentPane().add(rbdP5A);
+        rbdP5A.setBounds(880, 420, 110, 21);
+
+        rbdP5B.setBackground(new java.awt.Color(164, 127, 85));
+        gbtnP5.add(rbdP5B);
+        rbdP5B.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP5B.setForeground(new java.awt.Color(74, 43, 23));
+        rbdP5B.setText("b) 1");
+        rbdP5B.setBorder(null);
+        getContentPane().add(rbdP5B);
+        rbdP5B.setBounds(880, 450, 110, 21);
+
+        rbdP5C.setBackground(new java.awt.Color(164, 127, 85));
+        gbtnP5.add(rbdP5C);
+        rbdP5C.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP5C.setForeground(new java.awt.Color(74, 43, 23));
+        rbdP5C.setText("c) 3");
+        rbdP5C.setBorder(null);
+        getContentPane().add(rbdP5C);
+        rbdP5C.setBounds(880, 480, 110, 21);
+
+        rbdP3A.setBackground(new java.awt.Color(74, 43, 23));
+        gbtnP3.add(rbdP3A);
+        rbdP3A.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP3A.setForeground(new java.awt.Color(164, 127, 85));
+        rbdP3A.setText("a) Perseverance");
+        rbdP3A.setBorder(null);
+        getContentPane().add(rbdP3A);
+        rbdP3A.setBounds(880, 100, 149, 21);
+
+        lblTotalRespo.setBackground(new java.awt.Color(74, 43, 23));
+        lblTotalRespo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblTotalRespo.setForeground(new java.awt.Color(164, 127, 85));
+        getContentPane().add(lblTotalRespo);
+        lblTotalRespo.setBounds(189, 692, 203, 0);
+
+        lblResposta.setBackground(new java.awt.Color(74, 43, 23));
+        lblResposta.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblResposta.setForeground(new java.awt.Color(164, 127, 85));
+        getContentPane().add(lblResposta);
+        lblResposta.setBounds(35, 588, 107, 0);
+
+        lblMostrarResultado.setBackground(new java.awt.Color(74, 43, 23));
+        lblMostrarResultado.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblMostrarResultado.setForeground(new java.awt.Color(164, 127, 85));
+        getContentPane().add(lblMostrarResultado);
+        lblMostrarResultado.setBounds(511, 698, 389, 31);
+
+        btnContinuar.setBackground(new java.awt.Color(74, 43, 23));
+        btnContinuar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnContinuar.setForeground(new java.awt.Color(164, 127, 85));
+        btnContinuar.setText("Continuar");
+        btnContinuar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnContinuarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnContinuar);
+        btnContinuar.setBounds(1240, 670, 150, 60);
+
+        lblacertos.setBackground(new java.awt.Color(74, 43, 23));
+        lblacertos.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblacertos.setForeground(new java.awt.Color(164, 127, 85));
+        getContentPane().add(lblacertos);
+        lblacertos.setBounds(35, 698, 246, 0);
+
+        lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
+        lblFundo.setAlignmentY(0.0F);
+        getContentPane().add(lblFundo);
+        lblFundo.setBounds(0, 0, 1525, 790);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
-    {//GEN-HEADEREND:event_jButton2ActionPerformed
-         if (rbdC2.isSelected())
+    private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnContinuarActionPerformed
+    {//GEN-HEADEREND:event_btnContinuarActionPerformed
+         if (rbdP2A.isSelected())
         {
             resp2 = "acerto";
             Estaticos.SOMAACERTOS++; 
@@ -268,7 +273,7 @@ public class frmPergunta2 extends javax.swing.JDialog
         }    
       
         
-        if (rbdC3.isSelected())
+        if (rbdP3A.isSelected())
         {
             resp3 = "acerto";
             Estaticos.SOMAACERTOS++; 
@@ -279,7 +284,7 @@ public class frmPergunta2 extends javax.swing.JDialog
         } 
         
         
-        if (rbdC4.isSelected())
+        if (rbdP4C.isSelected())
         {
             resp4 = "acerto";
             Estaticos.SOMAACERTOS++; 
@@ -290,7 +295,7 @@ public class frmPergunta2 extends javax.swing.JDialog
         } 
         
         
-        if (rbdC.isSelected())
+        if (rbdP5C.isSelected())
         {
             resp5 = "acerto";
             Estaticos.SOMAACERTOS++; 
@@ -303,16 +308,16 @@ public class frmPergunta2 extends javax.swing.JDialog
         Controle controle = new Controle(Estaticos.NOME, Estaticos.RESP1, resp2, resp3, resp4, resp5);
 
         Estaticos.SOMA++;
-        lblTotalRespo.setText("Total de respondentes: " + Estaticos.SOMA);
-        Estaticos.TEXTO = lblTotalRespo.getText();
-        
-        lblacertos.setText("Seu total de acerto foi: " + Estaticos.SOMAACERTOS);
-        Estaticos.ACERTOS = lblacertos.getText();
+
         
         frmFinal frmF = new frmFinal(null, true);
         this.setVisible(false);
         frmF.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnContinuarActionPerformed
+
+    private void rbdP4CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbdP4CActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbdP4CActionPerformed
 
     /**
      * @param args the command line arguments
@@ -373,30 +378,31 @@ public class frmPergunta2 extends javax.swing.JDialog
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnContinuar;
     private javax.swing.ButtonGroup gbtnP2;
     private javax.swing.ButtonGroup gbtnP3;
     private javax.swing.ButtonGroup gbtnP4;
     private javax.swing.ButtonGroup gbtnP5;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton6;
+    private javax.swing.JLabel lblFundo;
     private javax.swing.JLabel lblMostrarResultado;
+    private javax.swing.JLabel lblPergunta2;
+    private javax.swing.JLabel lblPergunta3;
+    private javax.swing.JLabel lblPergunta4;
+    private javax.swing.JLabel lblPergunta5;
     private javax.swing.JLabel lblResposta;
     private javax.swing.JLabel lblTotalRespo;
     private javax.swing.JLabel lblacertos;
-    private javax.swing.JRadioButton rbdC;
-    private javax.swing.JRadioButton rbdC2;
-    private javax.swing.JRadioButton rbdC3;
-    private javax.swing.JRadioButton rbdC4;
-    private javax.swing.JRadioButton rbdE4;
-    private javax.swing.JRadioButton rbdEr4;
-    private javax.swing.JRadioButton rdbE2;
-    private javax.swing.JRadioButton rdbE5;
+    private javax.swing.JRadioButton rbdP2A;
+    private javax.swing.JRadioButton rbdP2B;
+    private javax.swing.JRadioButton rbdP2C;
+    private javax.swing.JRadioButton rbdP3A;
+    private javax.swing.JRadioButton rbdP3B;
+    private javax.swing.JRadioButton rbdP3C;
+    private javax.swing.JRadioButton rbdP4A;
+    private javax.swing.JRadioButton rbdP4B;
+    private javax.swing.JRadioButton rbdP4C;
+    private javax.swing.JRadioButton rbdP5A;
+    private javax.swing.JRadioButton rbdP5B;
+    private javax.swing.JRadioButton rbdP5C;
     // End of variables declaration//GEN-END:variables
 }

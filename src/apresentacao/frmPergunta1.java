@@ -4,11 +4,9 @@
  */
 package apresentacao;
 
+import modelo.*;
 
-import java.awt.Component;
-import java.awt.KeyboardFocusManager;
 import javax.swing.JOptionPane;
-import javax.swing.JTextField;
 import modelo.Controle;
 
 /**
@@ -37,7 +35,7 @@ public class frmPergunta1 extends javax.swing.JDialog
     private void initComponents()
     {
 
-        lbl = new javax.swing.JLabel();
+        lblTitulo = new javax.swing.JLabel();
         btnProximo = new javax.swing.JButton();
         btnQ = new javax.swing.JButton();
         btnW = new javax.swing.JButton();
@@ -70,13 +68,28 @@ public class frmPergunta1 extends javax.swing.JDialog
         btnB = new javax.swing.JButton();
         btnApagar = new javax.swing.JButton();
         btnEspaço = new javax.swing.JButton();
+        lblFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1525, 790));
+        setPreferredSize(new java.awt.Dimension(1525, 790));
+        setResizable(false);
+        getContentPane().setLayout(null);
 
-        lbl.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 36)); // NOI18N
-        lbl.setText("Vamos começar o questionario");
+        lblTitulo.setBackground(new java.awt.Color(74, 43, 23));
+        lblTitulo.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(164, 127, 85));
+        lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTitulo.setText("Vamos começar o questionario!");
+        lblTitulo.setToolTipText("");
+        getContentPane().add(lblTitulo);
+        lblTitulo.setBounds(550, 70, 506, 29);
 
-        btnProximo.setText("proxima");
+        btnProximo.setBackground(new java.awt.Color(74, 43, 23));
+        btnProximo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnProximo.setForeground(new java.awt.Color(164, 127, 85));
+        btnProximo.setText("Continuar");
+        btnProximo.setBorder(null);
         btnProximo.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -84,8 +97,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnProximoActionPerformed(evt);
             }
         });
+        getContentPane().add(btnProximo);
+        btnProximo.setBounds(1320, 590, 130, 50);
 
+        btnQ.setBackground(new java.awt.Color(74, 43, 23));
+        btnQ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnQ.setForeground(new java.awt.Color(164, 127, 85));
         btnQ.setText("Q");
+        btnQ.setBorder(null);
         btnQ.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -93,8 +112,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnQActionPerformed(evt);
             }
         });
+        getContentPane().add(btnQ);
+        btnQ.setBounds(440, 380, 57, 21);
 
+        btnW.setBackground(new java.awt.Color(74, 43, 23));
+        btnW.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnW.setForeground(new java.awt.Color(164, 127, 85));
         btnW.setText("W");
+        btnW.setBorder(null);
         btnW.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -102,8 +127,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnWActionPerformed(evt);
             }
         });
+        getContentPane().add(btnW);
+        btnW.setBounds(510, 380, 57, 21);
 
+        btnE.setBackground(new java.awt.Color(74, 43, 23));
+        btnE.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnE.setForeground(new java.awt.Color(164, 127, 85));
         btnE.setText("E");
+        btnE.setBorder(null);
         btnE.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -111,12 +142,43 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnEActionPerformed(evt);
             }
         });
+        getContentPane().add(btnE);
+        btnE.setBounds(590, 380, 57, 21);
 
+        lblPergunta1.setBackground(new java.awt.Color(74, 43, 23));
+        lblPergunta1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblPergunta1.setForeground(new java.awt.Color(196, 168, 136));
         lblPergunta1.setText("Pergunta 1: A afirmação a seguir é verdadeira ou falsa?  A missão de exploração mais longa realizada por uma sonda veicular durou 6 anos. ");
+        lblPergunta1.setPreferredSize(new java.awt.Dimension(1105, 21));
+        getContentPane().add(lblPergunta1);
+        lblPergunta1.setBounds(240, 240, 1130, 50);
 
+        txfResposta1.setBackground(new java.awt.Color(74, 43, 23));
+        txfResposta1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        txfResposta1.setForeground(new java.awt.Color(164, 127, 85));
+        txfResposta1.setBorder(null);
+        txfResposta1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                txfResposta1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txfResposta1);
+        txfResposta1.setBounds(410, 320, 775, 21);
+
+        lblVF.setBackground(new java.awt.Color(74, 43, 23));
+        lblVF.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblVF.setForeground(new java.awt.Color(196, 168, 136));
         lblVF.setText("digite \"verdadeiro\" ou \"falso\"");
+        getContentPane().add(lblVF);
+        lblVF.setBounds(680, 290, 290, 21);
 
+        btnR.setBackground(new java.awt.Color(74, 43, 23));
+        btnR.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnR.setForeground(new java.awt.Color(164, 127, 85));
         btnR.setText("R");
+        btnR.setBorder(null);
         btnR.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -124,8 +186,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnRActionPerformed(evt);
             }
         });
+        getContentPane().add(btnR);
+        btnR.setBounds(660, 380, 57, 21);
 
+        btnT.setBackground(new java.awt.Color(74, 43, 23));
+        btnT.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnT.setForeground(new java.awt.Color(164, 127, 85));
         btnT.setText("T");
+        btnT.setBorder(null);
         btnT.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -133,8 +201,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnTActionPerformed(evt);
             }
         });
+        getContentPane().add(btnT);
+        btnT.setBounds(740, 380, 57, 21);
 
+        btnO.setBackground(new java.awt.Color(74, 43, 23));
+        btnO.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnO.setForeground(new java.awt.Color(164, 127, 85));
         btnO.setText("O");
+        btnO.setBorder(null);
         btnO.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -142,8 +216,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnOActionPerformed(evt);
             }
         });
+        getContentPane().add(btnO);
+        btnO.setBounds(1040, 380, 57, 21);
 
+        btnP.setBackground(new java.awt.Color(74, 43, 23));
+        btnP.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnP.setForeground(new java.awt.Color(164, 127, 85));
         btnP.setText("P");
+        btnP.setBorder(null);
         btnP.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -151,8 +231,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnPActionPerformed(evt);
             }
         });
+        getContentPane().add(btnP);
+        btnP.setBounds(1110, 380, 57, 21);
 
+        btnY.setBackground(new java.awt.Color(74, 43, 23));
+        btnY.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnY.setForeground(new java.awt.Color(164, 127, 85));
         btnY.setText("Y");
+        btnY.setBorder(null);
         btnY.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -160,8 +246,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnYActionPerformed(evt);
             }
         });
+        getContentPane().add(btnY);
+        btnY.setBounds(810, 380, 57, 21);
 
+        btnU.setBackground(new java.awt.Color(74, 43, 23));
+        btnU.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnU.setForeground(new java.awt.Color(164, 127, 85));
         btnU.setText("U");
+        btnU.setBorder(null);
         btnU.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -169,8 +261,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnUActionPerformed(evt);
             }
         });
+        getContentPane().add(btnU);
+        btnU.setBounds(890, 380, 57, 21);
 
+        btnI.setBackground(new java.awt.Color(74, 43, 23));
+        btnI.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnI.setForeground(new java.awt.Color(164, 127, 85));
         btnI.setText("I");
+        btnI.setBorder(null);
         btnI.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -178,8 +276,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnIActionPerformed(evt);
             }
         });
+        getContentPane().add(btnI);
+        btnI.setBounds(960, 380, 57, 21);
 
+        btnF.setBackground(new java.awt.Color(74, 43, 23));
+        btnF.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnF.setForeground(new java.awt.Color(164, 127, 85));
         btnF.setText("F");
+        btnF.setBorder(null);
         btnF.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -187,8 +291,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnFActionPerformed(evt);
             }
         });
+        getContentPane().add(btnF);
+        btnF.setBounds(700, 430, 57, 21);
 
+        btnG.setBackground(new java.awt.Color(74, 43, 23));
+        btnG.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnG.setForeground(new java.awt.Color(164, 127, 85));
         btnG.setText("G");
+        btnG.setBorder(null);
         btnG.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -196,8 +306,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnGActionPerformed(evt);
             }
         });
+        getContentPane().add(btnG);
+        btnG.setBounds(780, 430, 57, 21);
 
+        btnL.setBackground(new java.awt.Color(74, 43, 23));
+        btnL.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnL.setForeground(new java.awt.Color(164, 127, 85));
         btnL.setText("L");
+        btnL.setBorder(null);
         btnL.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -205,8 +321,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnLActionPerformed(evt);
             }
         });
+        getContentPane().add(btnL);
+        btnL.setBounds(1080, 430, 57, 21);
 
+        btnH.setBackground(new java.awt.Color(74, 43, 23));
+        btnH.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnH.setForeground(new java.awt.Color(164, 127, 85));
         btnH.setText("H");
+        btnH.setBorder(null);
         btnH.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -214,8 +336,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnHActionPerformed(evt);
             }
         });
+        getContentPane().add(btnH);
+        btnH.setBounds(850, 430, 57, 21);
 
+        btnJ.setBackground(new java.awt.Color(74, 43, 23));
+        btnJ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnJ.setForeground(new java.awt.Color(164, 127, 85));
         btnJ.setText("J");
+        btnJ.setBorder(null);
         btnJ.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -223,8 +351,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnJActionPerformed(evt);
             }
         });
+        getContentPane().add(btnJ);
+        btnJ.setBounds(930, 430, 57, 21);
 
+        btnK.setBackground(new java.awt.Color(74, 43, 23));
+        btnK.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnK.setForeground(new java.awt.Color(164, 127, 85));
         btnK.setText("K");
+        btnK.setBorder(null);
         btnK.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -232,8 +366,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnKActionPerformed(evt);
             }
         });
+        getContentPane().add(btnK);
+        btnK.setBounds(1000, 430, 57, 21);
 
+        btnA.setBackground(new java.awt.Color(74, 43, 23));
+        btnA.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnA.setForeground(new java.awt.Color(164, 127, 85));
         btnA.setText("A");
+        btnA.setBorder(null);
         btnA.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -241,8 +381,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnAActionPerformed(evt);
             }
         });
+        getContentPane().add(btnA);
+        btnA.setBounds(480, 430, 57, 21);
 
+        btnS.setBackground(new java.awt.Color(74, 43, 23));
+        btnS.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnS.setForeground(new java.awt.Color(164, 127, 85));
         btnS.setText("S");
+        btnS.setBorder(null);
         btnS.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -250,8 +396,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnSActionPerformed(evt);
             }
         });
+        getContentPane().add(btnS);
+        btnS.setBounds(550, 430, 57, 21);
 
+        btnD.setBackground(new java.awt.Color(74, 43, 23));
+        btnD.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnD.setForeground(new java.awt.Color(164, 127, 85));
         btnD.setText("D");
+        btnD.setBorder(null);
         btnD.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -259,8 +411,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnDActionPerformed(evt);
             }
         });
+        getContentPane().add(btnD);
+        btnD.setBounds(630, 430, 57, 21);
 
+        btnN.setBackground(new java.awt.Color(74, 43, 23));
+        btnN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnN.setForeground(new java.awt.Color(164, 127, 85));
         btnN.setText("N");
+        btnN.setBorder(null);
         btnN.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -268,8 +426,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnNActionPerformed(evt);
             }
         });
+        getContentPane().add(btnN);
+        btnN.setBounds(930, 480, 57, 21);
 
+        btnM.setBackground(new java.awt.Color(74, 43, 23));
+        btnM.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnM.setForeground(new java.awt.Color(164, 127, 85));
         btnM.setText("M");
+        btnM.setBorder(null);
         btnM.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -277,8 +441,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnMActionPerformed(evt);
             }
         });
+        getContentPane().add(btnM);
+        btnM.setBounds(1000, 480, 57, 21);
 
+        btnZ.setBackground(new java.awt.Color(74, 43, 23));
+        btnZ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnZ.setForeground(new java.awt.Color(164, 127, 85));
         btnZ.setText("Z");
+        btnZ.setBorder(null);
         btnZ.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -286,8 +456,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnZActionPerformed(evt);
             }
         });
+        getContentPane().add(btnZ);
+        btnZ.setBounds(550, 480, 57, 21);
 
+        btnX.setBackground(new java.awt.Color(74, 43, 23));
+        btnX.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnX.setForeground(new java.awt.Color(164, 127, 85));
         btnX.setText("X");
+        btnX.setBorder(null);
         btnX.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -295,8 +471,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnXActionPerformed(evt);
             }
         });
+        getContentPane().add(btnX);
+        btnX.setBounds(630, 480, 57, 21);
 
+        btnC.setBackground(new java.awt.Color(74, 43, 23));
+        btnC.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnC.setForeground(new java.awt.Color(164, 127, 85));
         btnC.setText("C");
+        btnC.setBorder(null);
         btnC.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -304,8 +486,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnCActionPerformed(evt);
             }
         });
+        getContentPane().add(btnC);
+        btnC.setBounds(700, 480, 57, 21);
 
+        btnV.setBackground(new java.awt.Color(74, 43, 23));
+        btnV.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnV.setForeground(new java.awt.Color(164, 127, 85));
         btnV.setText("V");
+        btnV.setBorder(null);
         btnV.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -313,8 +501,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnVActionPerformed(evt);
             }
         });
+        getContentPane().add(btnV);
+        btnV.setBounds(780, 480, 57, 21);
 
+        btnB.setBackground(new java.awt.Color(74, 43, 23));
+        btnB.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnB.setForeground(new java.awt.Color(164, 127, 85));
         btnB.setText("B");
+        btnB.setBorder(null);
         btnB.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -322,8 +516,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnBActionPerformed(evt);
             }
         });
+        getContentPane().add(btnB);
+        btnB.setBounds(850, 480, 57, 21);
 
+        btnApagar.setBackground(new java.awt.Color(74, 43, 23));
+        btnApagar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnApagar.setForeground(new java.awt.Color(164, 127, 85));
         btnApagar.setText("Backspace");
+        btnApagar.setBorder(null);
         btnApagar.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -331,8 +531,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnApagarActionPerformed(evt);
             }
         });
+        getContentPane().add(btnApagar);
+        btnApagar.setBounds(1220, 380, 134, 21);
 
+        btnEspaço.setBackground(new java.awt.Color(74, 43, 23));
+        btnEspaço.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnEspaço.setForeground(new java.awt.Color(164, 127, 85));
         btnEspaço.setText("Space");
+        btnEspaço.setBorder(null);
         btnEspaço.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -340,144 +546,14 @@ public class frmPergunta1 extends javax.swing.JDialog
                 btnEspaçoActionPerformed(evt);
             }
         });
+        getContentPane().add(btnEspaço);
+        btnEspaço.setBounds(550, 540, 517, 36);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(73, 376, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnQ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnW, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnE, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnR, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnT, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnY, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnU, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnI, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnO, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnP, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(47, 47, 47)
-                                .addComponent(btnApagar, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(37, 37, 37)
-                                .addComponent(btnA, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btnZ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnX, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnV, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnB, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnN, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnM, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btnS, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnD, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnF, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnG, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnH, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnJ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnK, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnL, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(btnEspaço, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(214, 214, 214))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnProximo, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(461, 461, 461))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txfResposta1, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblPergunta1, javax.swing.GroupLayout.PREFERRED_SIZE, 795, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(309, 309, 309)
-                                .addComponent(lblVF, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(354, 354, 354))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnProximo))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(lbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 253, Short.MAX_VALUE)
-                        .addComponent(lblPergunta1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblVF)
-                        .addGap(26, 26, 26)
-                        .addComponent(txfResposta1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(109, 109, 109)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnQ)
-                            .addComponent(btnW)
-                            .addComponent(btnE)
-                            .addComponent(btnR)
-                            .addComponent(btnT)
-                            .addComponent(btnY)
-                            .addComponent(btnU)
-                            .addComponent(btnI)
-                            .addComponent(btnO)
-                            .addComponent(btnP)
-                            .addComponent(btnApagar))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnA)
-                            .addComponent(btnS)
-                            .addComponent(btnD)
-                            .addComponent(btnF)
-                            .addComponent(btnG)
-                            .addComponent(btnH)
-                            .addComponent(btnJ)
-                            .addComponent(btnK)
-                            .addComponent(btnL))
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnZ)
-                            .addComponent(btnX)
-                            .addComponent(btnC)
-                            .addComponent(btnV)
-                            .addComponent(btnB)
-                            .addComponent(btnN)
-                            .addComponent(btnM))
-                        .addGap(36, 36, 36)
-                        .addComponent(btnEspaço, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)))
-                .addGap(39, 39, 39))
-        );
+        lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
+        lblFundo.setAlignmentY(0.0F);
+        lblFundo.setFocusable(false);
+        getContentPane().add(lblFundo);
+        lblFundo.setBounds(0, 0, 1525, 790);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -673,6 +749,10 @@ public class frmPergunta1 extends javax.swing.JDialog
         txfResposta1.setText(txfResposta1.getText() + " ");
     }//GEN-LAST:event_btnEspaçoActionPerformed
 
+    private void txfResposta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txfResposta1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txfResposta1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -761,8 +841,9 @@ public class frmPergunta1 extends javax.swing.JDialog
     private javax.swing.JButton btnX;
     private javax.swing.JButton btnY;
     private javax.swing.JButton btnZ;
-    private javax.swing.JLabel lbl;
+    private javax.swing.JLabel lblFundo;
     private javax.swing.JLabel lblPergunta1;
+    private javax.swing.JLabel lblTitulo;
     private javax.swing.JLabel lblVF;
     private javax.swing.JTextField txfResposta1;
     // End of variables declaration//GEN-END:variables

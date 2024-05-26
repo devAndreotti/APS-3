@@ -24,18 +24,15 @@ public class frmFinal extends javax.swing.JDialog
         super(parent, modal);
         initComponents();
         lblNome.setText(Estaticos.NOME);
-        lblTotalRespo.setText(Estaticos.TEXTO);
+        lblTotalRespo.setText("Total de respondentes: " + Estaticos.SOMA);
         if(Estaticos.SOMAACERTOS >= 3){
             lblSituacao.setText("Parabens!!");
-            lblAcertos.setText(Estaticos.ACERTOS);
-            imgParabens.setVisible(true);
-            imgOutro.setVisible(false);
+            lblAcertos.setText("Seu total de acerto foi: " + Estaticos.SOMAACERTOS);
+
         }else
         {
             lblSituacao.setText("Que pena!");
-            lblAcertos.setText(Estaticos.ACERTOS);
-            imgParabens.setVisible(false);
-            imgOutro.setVisible(true);
+            lblAcertos.setText("Seu total de acerto foi: " + Estaticos.SOMAACERTOS);
         }
         
         
@@ -45,7 +42,7 @@ public class frmFinal extends javax.swing.JDialog
                 //executar ação aqui
             btnFinalizar.doClick();
             }
-        }, 7000);
+        }, 30000);
 
         
         
@@ -61,21 +58,32 @@ public class frmFinal extends javax.swing.JDialog
     private void initComponents()
     {
 
-        btnFinalizar = new javax.swing.JButton();
         lblTotalRespo = new javax.swing.JLabel();
+        btnFinalizar = new javax.swing.JButton();
         lblNome = new javax.swing.JLabel();
         lblAcertos = new javax.swing.JLabel();
         lblSituacao = new javax.swing.JLabel();
-        imgParabens = new javax.swing.JLabel();
-        imgOutro = new javax.swing.JLabel();
         btnMostrarDados = new javax.swing.JButton();
+        lblFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1535, 850));
+        setMaximumSize(null);
+        setMinimumSize(new java.awt.Dimension(1525, 790));
+        setPreferredSize(new java.awt.Dimension(1525, 790));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnFinalizar.setText("finalizar");
+        lblTotalRespo.setBackground(new java.awt.Color(0, 0, 0));
+        lblTotalRespo.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        lblTotalRespo.setForeground(new java.awt.Color(255, 255, 255));
+        lblTotalRespo.setText("total de respondentes :");
+        getContentPane().add(lblTotalRespo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 700, 330, 40));
+
+        btnFinalizar.setBackground(new java.awt.Color(74, 43, 23));
+        btnFinalizar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnFinalizar.setForeground(new java.awt.Color(164, 127, 85));
+        btnFinalizar.setText("Finalizar");
+        btnFinalizar.setBorder(null);
         btnFinalizar.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -83,30 +91,34 @@ public class frmFinal extends javax.swing.JDialog
                 btnFinalizarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFinalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 410, 121, 39));
-        getContentPane().add(lblTotalRespo, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 917, 449, 20));
+        getContentPane().add(btnFinalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 640, 150, 60));
 
-        lblNome.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        lblNome.setBackground(new java.awt.Color(74, 43, 23));
+        lblNome.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblNome.setForeground(new java.awt.Color(164, 127, 85));
+        lblNome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblNome.setText("seu nome");
-        getContentPane().add(lblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 170, 50));
+        lblNome.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(lblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 1490, 40));
 
+        lblAcertos.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblAcertos.setForeground(new java.awt.Color(164, 127, 85));
         lblAcertos.setText("total de acerto");
-        getContentPane().add(lblAcertos, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, 156, -1));
+        getContentPane().add(lblAcertos, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 200, 320, 50));
 
-        lblSituacao.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        lblSituacao.setText("Parabens!!");
-        getContentPane().add(lblSituacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 40, 260, 40));
+        lblSituacao.setBackground(new java.awt.Color(74, 43, 23));
+        lblSituacao.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblSituacao.setForeground(new java.awt.Color(164, 127, 85));
+        lblSituacao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblSituacao.setText("Parabéns!!");
+        lblSituacao.setAlignmentY(0.0F);
+        getContentPane().add(lblSituacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 1525, 40));
 
-        imgParabens.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\Aps\\src\\img\\img1.gif")); // NOI18N
-        imgParabens.setText("jLabel1");
-        imgParabens.setToolTipText("");
-        getContentPane().add(imgParabens, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 200, 480, 360));
-
-        imgOutro.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\Aps\\src\\img\\img2.gif")); // NOI18N
-        imgOutro.setText("jLabel1");
-        getContentPane().add(imgOutro, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, 540, 370));
-
+        btnMostrarDados.setBackground(new java.awt.Color(74, 43, 23));
+        btnMostrarDados.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnMostrarDados.setForeground(new java.awt.Color(164, 127, 85));
         btnMostrarDados.setText("respostas ");
+        btnMostrarDados.setBorder(null);
         btnMostrarDados.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -114,7 +126,11 @@ public class frmFinal extends javax.swing.JDialog
                 btnMostrarDadosActionPerformed(evt);
             }
         });
-        getContentPane().add(btnMostrarDados, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 420, 132, -1));
+        getContentPane().add(btnMostrarDados, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 390, 132, -1));
+
+        lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
+        lblFundo.setAlignmentY(0.0F);
+        getContentPane().add(lblFundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -205,9 +221,8 @@ public class frmFinal extends javax.swing.JDialog
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnFinalizar;
     private javax.swing.JButton btnMostrarDados;
-    private javax.swing.JLabel imgOutro;
-    private javax.swing.JLabel imgParabens;
     private javax.swing.JLabel lblAcertos;
+    private javax.swing.JLabel lblFundo;
     private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblSituacao;
     private javax.swing.JLabel lblTotalRespo;

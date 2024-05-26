@@ -4,6 +4,8 @@
  */
 package apresentacao;
 
+import javax.swing.JOptionPane;
+import modelo.*;
 /**
  *
  * @author User
@@ -61,12 +63,31 @@ public class frmNome extends javax.swing.JDialog
         btnG = new javax.swing.JButton();
         btnL = new javax.swing.JButton();
         btnProximo1 = new javax.swing.JButton();
+        lblFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1525, 790));
+        getContentPane().setLayout(null);
 
+        txfNome.setBackground(new java.awt.Color(74, 43, 23));
+        txfNome.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        txfNome.setForeground(new java.awt.Color(164, 127, 85));
+        txfNome.setBorder(null);
+        getContentPane().add(txfNome);
+        txfNome.setBounds(286, 267, 781, 21);
+
+        lblNome.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblNome.setForeground(new java.awt.Color(164, 127, 85));
         lblNome.setText("Digite seu nome");
+        getContentPane().add(lblNome);
+        lblNome.setBounds(286, 188, 506, 29);
 
+        btnH.setBackground(new java.awt.Color(74, 43, 23));
+        btnH.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnH.setForeground(new java.awt.Color(164, 127, 85));
         btnH.setText("H");
+        btnH.setBorder(null);
+        btnH.setBorderPainted(false);
         btnH.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -74,8 +95,15 @@ public class frmNome extends javax.swing.JDialog
                 btnHActionPerformed(evt);
             }
         });
+        getContentPane().add(btnH);
+        btnH.setBounds(698, 416, 57, 21);
 
+        btnJ.setBackground(new java.awt.Color(74, 43, 23));
+        btnJ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnJ.setForeground(new java.awt.Color(164, 127, 85));
         btnJ.setText("J");
+        btnJ.setBorder(null);
+        btnJ.setBorderPainted(false);
         btnJ.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -83,8 +111,15 @@ public class frmNome extends javax.swing.JDialog
                 btnJActionPerformed(evt);
             }
         });
+        getContentPane().add(btnJ);
+        btnJ.setBounds(773, 416, 57, 21);
 
+        btnK.setBackground(new java.awt.Color(74, 43, 23));
+        btnK.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnK.setForeground(new java.awt.Color(164, 127, 85));
         btnK.setText("K");
+        btnK.setBorder(null);
+        btnK.setBorderPainted(false);
         btnK.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -92,8 +127,15 @@ public class frmNome extends javax.swing.JDialog
                 btnKActionPerformed(evt);
             }
         });
+        getContentPane().add(btnK);
+        btnK.setBounds(848, 416, 57, 21);
 
+        btnA.setBackground(new java.awt.Color(74, 43, 23));
+        btnA.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnA.setForeground(new java.awt.Color(164, 127, 85));
         btnA.setText("A");
+        btnA.setBorder(null);
+        btnA.setBorderPainted(false);
         btnA.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -101,8 +143,15 @@ public class frmNome extends javax.swing.JDialog
                 btnAActionPerformed(evt);
             }
         });
+        getContentPane().add(btnA);
+        btnA.setBounds(323, 416, 57, 21);
 
+        btnS.setBackground(new java.awt.Color(74, 43, 23));
+        btnS.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnS.setForeground(new java.awt.Color(164, 127, 85));
         btnS.setText("S");
+        btnS.setBorder(null);
+        btnS.setBorderPainted(false);
         btnS.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -110,8 +159,15 @@ public class frmNome extends javax.swing.JDialog
                 btnSActionPerformed(evt);
             }
         });
+        getContentPane().add(btnS);
+        btnS.setBounds(398, 416, 57, 21);
 
+        btnD.setBackground(new java.awt.Color(74, 43, 23));
+        btnD.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnD.setForeground(new java.awt.Color(164, 127, 85));
         btnD.setText("D");
+        btnD.setBorder(null);
+        btnD.setBorderPainted(false);
         btnD.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -119,8 +175,15 @@ public class frmNome extends javax.swing.JDialog
                 btnDActionPerformed(evt);
             }
         });
+        getContentPane().add(btnD);
+        btnD.setBounds(473, 416, 57, 21);
 
+        btnN.setBackground(new java.awt.Color(74, 43, 23));
+        btnN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnN.setForeground(new java.awt.Color(164, 127, 85));
         btnN.setText("N");
+        btnN.setBorder(null);
+        btnN.setBorderPainted(false);
         btnN.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -128,8 +191,15 @@ public class frmNome extends javax.swing.JDialog
                 btnNActionPerformed(evt);
             }
         });
+        getContentPane().add(btnN);
+        btnN.setBounds(773, 469, 57, 21);
 
+        btnM.setBackground(new java.awt.Color(74, 43, 23));
+        btnM.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnM.setForeground(new java.awt.Color(164, 127, 85));
         btnM.setText("M");
+        btnM.setBorder(null);
+        btnM.setBorderPainted(false);
         btnM.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -137,8 +207,15 @@ public class frmNome extends javax.swing.JDialog
                 btnMActionPerformed(evt);
             }
         });
+        getContentPane().add(btnM);
+        btnM.setBounds(848, 469, 57, 21);
 
+        btnZ.setBackground(new java.awt.Color(74, 43, 23));
+        btnZ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnZ.setForeground(new java.awt.Color(164, 127, 85));
         btnZ.setText("Z");
+        btnZ.setBorder(null);
+        btnZ.setBorderPainted(false);
         btnZ.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -146,8 +223,15 @@ public class frmNome extends javax.swing.JDialog
                 btnZActionPerformed(evt);
             }
         });
+        getContentPane().add(btnZ);
+        btnZ.setBounds(398, 469, 57, 21);
 
+        btnX.setBackground(new java.awt.Color(74, 43, 23));
+        btnX.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnX.setForeground(new java.awt.Color(164, 127, 85));
         btnX.setText("X");
+        btnX.setBorder(null);
+        btnX.setBorderPainted(false);
         btnX.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -155,8 +239,15 @@ public class frmNome extends javax.swing.JDialog
                 btnXActionPerformed(evt);
             }
         });
+        getContentPane().add(btnX);
+        btnX.setBounds(473, 469, 57, 21);
 
+        btnC.setBackground(new java.awt.Color(74, 43, 23));
+        btnC.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnC.setForeground(new java.awt.Color(164, 127, 85));
         btnC.setText("C");
+        btnC.setBorder(null);
+        btnC.setBorderPainted(false);
         btnC.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -164,8 +255,15 @@ public class frmNome extends javax.swing.JDialog
                 btnCActionPerformed(evt);
             }
         });
+        getContentPane().add(btnC);
+        btnC.setBounds(548, 469, 57, 21);
 
+        btnV.setBackground(new java.awt.Color(74, 43, 23));
+        btnV.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnV.setForeground(new java.awt.Color(164, 127, 85));
         btnV.setText("V");
+        btnV.setBorder(null);
+        btnV.setBorderPainted(false);
         btnV.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -173,8 +271,15 @@ public class frmNome extends javax.swing.JDialog
                 btnVActionPerformed(evt);
             }
         });
+        getContentPane().add(btnV);
+        btnV.setBounds(623, 469, 57, 21);
 
+        btnR.setBackground(new java.awt.Color(74, 43, 23));
+        btnR.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnR.setForeground(new java.awt.Color(164, 127, 85));
         btnR.setText("R");
+        btnR.setBorder(null);
+        btnR.setBorderPainted(false);
         btnR.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -182,8 +287,15 @@ public class frmNome extends javax.swing.JDialog
                 btnRActionPerformed(evt);
             }
         });
+        getContentPane().add(btnR);
+        btnR.setBounds(511, 375, 57, 21);
 
+        btnB.setBackground(new java.awt.Color(74, 43, 23));
+        btnB.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnB.setForeground(new java.awt.Color(164, 127, 85));
         btnB.setText("B");
+        btnB.setBorder(null);
+        btnB.setBorderPainted(false);
         btnB.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -191,8 +303,15 @@ public class frmNome extends javax.swing.JDialog
                 btnBActionPerformed(evt);
             }
         });
+        getContentPane().add(btnB);
+        btnB.setBounds(698, 469, 57, 21);
 
+        btnT.setBackground(new java.awt.Color(74, 43, 23));
+        btnT.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnT.setForeground(new java.awt.Color(164, 127, 85));
         btnT.setText("T");
+        btnT.setBorder(null);
+        btnT.setBorderPainted(false);
         btnT.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -200,8 +319,14 @@ public class frmNome extends javax.swing.JDialog
                 btnTActionPerformed(evt);
             }
         });
+        getContentPane().add(btnT);
+        btnT.setBounds(586, 375, 57, 21);
 
+        btnApagar.setBackground(new java.awt.Color(74, 43, 23));
+        btnApagar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnApagar.setForeground(new java.awt.Color(164, 127, 85));
         btnApagar.setText("Backspace");
+        btnApagar.setBorder(null);
         btnApagar.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -209,8 +334,15 @@ public class frmNome extends javax.swing.JDialog
                 btnApagarActionPerformed(evt);
             }
         });
+        getContentPane().add(btnApagar);
+        btnApagar.setBounds(1065, 375, 134, 21);
 
+        btnO.setBackground(new java.awt.Color(74, 43, 23));
+        btnO.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnO.setForeground(new java.awt.Color(164, 127, 85));
         btnO.setText("O");
+        btnO.setBorder(null);
+        btnO.setBorderPainted(false);
         btnO.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -218,8 +350,15 @@ public class frmNome extends javax.swing.JDialog
                 btnOActionPerformed(evt);
             }
         });
+        getContentPane().add(btnO);
+        btnO.setBounds(886, 375, 57, 21);
 
+        btnEspaço.setBackground(new java.awt.Color(74, 43, 23));
+        btnEspaço.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnEspaço.setForeground(new java.awt.Color(164, 127, 85));
         btnEspaço.setText("Space");
+        btnEspaço.setBorder(null);
+        btnEspaço.setBorderPainted(false);
         btnEspaço.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -227,8 +366,15 @@ public class frmNome extends javax.swing.JDialog
                 btnEspaçoActionPerformed(evt);
             }
         });
+        getContentPane().add(btnEspaço);
+        btnEspaço.setBounds(398, 528, 517, 36);
 
+        btnP.setBackground(new java.awt.Color(74, 43, 23));
+        btnP.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnP.setForeground(new java.awt.Color(164, 127, 85));
         btnP.setText("P");
+        btnP.setBorder(null);
+        btnP.setBorderPainted(false);
         btnP.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -236,8 +382,15 @@ public class frmNome extends javax.swing.JDialog
                 btnPActionPerformed(evt);
             }
         });
+        getContentPane().add(btnP);
+        btnP.setBounds(961, 375, 57, 21);
 
+        btnY.setBackground(new java.awt.Color(74, 43, 23));
+        btnY.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnY.setForeground(new java.awt.Color(164, 127, 85));
         btnY.setText("Y");
+        btnY.setBorder(null);
+        btnY.setBorderPainted(false);
         btnY.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -245,8 +398,15 @@ public class frmNome extends javax.swing.JDialog
                 btnYActionPerformed(evt);
             }
         });
+        getContentPane().add(btnY);
+        btnY.setBounds(661, 375, 57, 21);
 
+        btnU.setBackground(new java.awt.Color(74, 43, 23));
+        btnU.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnU.setForeground(new java.awt.Color(164, 127, 85));
         btnU.setText("U");
+        btnU.setBorder(null);
+        btnU.setBorderPainted(false);
         btnU.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -254,8 +414,15 @@ public class frmNome extends javax.swing.JDialog
                 btnUActionPerformed(evt);
             }
         });
+        getContentPane().add(btnU);
+        btnU.setBounds(736, 375, 57, 21);
 
+        btnI.setBackground(new java.awt.Color(74, 43, 23));
+        btnI.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnI.setForeground(new java.awt.Color(164, 127, 85));
         btnI.setText("I");
+        btnI.setBorder(null);
+        btnI.setBorderPainted(false);
         btnI.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -263,8 +430,15 @@ public class frmNome extends javax.swing.JDialog
                 btnIActionPerformed(evt);
             }
         });
+        getContentPane().add(btnI);
+        btnI.setBounds(811, 375, 57, 21);
 
+        btnF.setBackground(new java.awt.Color(74, 43, 23));
+        btnF.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnF.setForeground(new java.awt.Color(164, 127, 85));
         btnF.setText("F");
+        btnF.setBorder(null);
+        btnF.setBorderPainted(false);
         btnF.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -272,8 +446,15 @@ public class frmNome extends javax.swing.JDialog
                 btnFActionPerformed(evt);
             }
         });
+        getContentPane().add(btnF);
+        btnF.setBounds(548, 416, 57, 21);
 
+        btnQ.setBackground(new java.awt.Color(74, 43, 23));
+        btnQ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnQ.setForeground(new java.awt.Color(164, 127, 85));
         btnQ.setText("Q");
+        btnQ.setBorder(null);
+        btnQ.setBorderPainted(false);
         btnQ.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -281,8 +462,15 @@ public class frmNome extends javax.swing.JDialog
                 btnQActionPerformed(evt);
             }
         });
+        getContentPane().add(btnQ);
+        btnQ.setBounds(286, 375, 57, 21);
 
+        btnW.setBackground(new java.awt.Color(74, 43, 23));
+        btnW.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnW.setForeground(new java.awt.Color(164, 127, 85));
         btnW.setText("W");
+        btnW.setBorder(null);
+        btnW.setBorderPainted(false);
         btnW.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -290,8 +478,15 @@ public class frmNome extends javax.swing.JDialog
                 btnWActionPerformed(evt);
             }
         });
+        getContentPane().add(btnW);
+        btnW.setBounds(361, 375, 57, 21);
 
+        btnE.setBackground(new java.awt.Color(74, 43, 23));
+        btnE.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnE.setForeground(new java.awt.Color(164, 127, 85));
         btnE.setText("E");
+        btnE.setBorder(null);
+        btnE.setBorderPainted(false);
         btnE.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -299,8 +494,15 @@ public class frmNome extends javax.swing.JDialog
                 btnEActionPerformed(evt);
             }
         });
+        getContentPane().add(btnE);
+        btnE.setBounds(436, 375, 57, 21);
 
+        btnG.setBackground(new java.awt.Color(74, 43, 23));
+        btnG.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnG.setForeground(new java.awt.Color(164, 127, 85));
         btnG.setText("G");
+        btnG.setBorder(null);
+        btnG.setBorderPainted(false);
         btnG.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -308,8 +510,15 @@ public class frmNome extends javax.swing.JDialog
                 btnGActionPerformed(evt);
             }
         });
+        getContentPane().add(btnG);
+        btnG.setBounds(623, 416, 57, 21);
 
+        btnL.setBackground(new java.awt.Color(74, 43, 23));
+        btnL.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnL.setForeground(new java.awt.Color(164, 127, 85));
         btnL.setText("L");
+        btnL.setBorder(null);
+        btnL.setBorderPainted(false);
         btnL.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -317,8 +526,15 @@ public class frmNome extends javax.swing.JDialog
                 btnLActionPerformed(evt);
             }
         });
+        getContentPane().add(btnL);
+        btnL.setBounds(923, 416, 57, 21);
 
-        btnProximo1.setText("proxima");
+        btnProximo1.setBackground(new java.awt.Color(74, 43, 23));
+        btnProximo1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnProximo1.setForeground(new java.awt.Color(164, 127, 85));
+        btnProximo1.setText("Continuar");
+        btnProximo1.setBorder(null);
+        btnProximo1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnProximo1.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -326,126 +542,17 @@ public class frmNome extends javax.swing.JDialog
                 btnProximo1ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnProximo1);
+        btnProximo1.setBounds(1180, 610, 157, 54);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(286, 286, 286)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnQ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnW, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnE, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnR, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnT, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnY, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnU, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnI, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnO, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnP, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47)
-                        .addComponent(btnApagar, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(btnA, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnZ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnX, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnV, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnB, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnN, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnM, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnS, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnD, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnF, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnG, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnH, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnJ, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnK, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnL, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(btnEspaço, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(lblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txfNome, javax.swing.GroupLayout.PREFERRED_SIZE, 781, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(214, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnProximo1, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(68, 68, 68))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(204, 204, 204)
-                .addComponent(lblNome)
-                .addGap(63, 63, 63)
-                .addComponent(txfNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(86, 86, 86)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnQ)
-                    .addComponent(btnW)
-                    .addComponent(btnE)
-                    .addComponent(btnR)
-                    .addComponent(btnT)
-                    .addComponent(btnY)
-                    .addComponent(btnU)
-                    .addComponent(btnI)
-                    .addComponent(btnO)
-                    .addComponent(btnP)
-                    .addComponent(btnApagar))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnA)
-                    .addComponent(btnS)
-                    .addComponent(btnD)
-                    .addComponent(btnF)
-                    .addComponent(btnG)
-                    .addComponent(btnH)
-                    .addComponent(btnJ)
-                    .addComponent(btnK)
-                    .addComponent(btnL))
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnZ)
-                    .addComponent(btnX)
-                    .addComponent(btnC)
-                    .addComponent(btnV)
-                    .addComponent(btnB)
-                    .addComponent(btnN)
-                    .addComponent(btnM))
-                .addGap(36, 36, 36)
-                .addComponent(btnEspaço, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnProximo1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(87, 87, 87))
-        );
+        lblFundo.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblFundo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
+        lblFundo.setLabelFor(this);
+        lblFundo.setAlignmentY(0.0F);
+        lblFundo.setFocusable(false);
+        getContentPane().add(lblFundo);
+        lblFundo.setBounds(0, 0, 1525, 790);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -592,10 +699,16 @@ public class frmNome extends javax.swing.JDialog
 
     private void btnProximo1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnProximo1ActionPerformed
     {//GEN-HEADEREND:event_btnProximo1ActionPerformed
+       if (txfNome.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Nome não pode ser vazio");
+       }
+       else
+       {
        Estaticos.NOME = txfNome.getText();
        frmPergunta1 frmP1 = new frmPergunta1(null, true);
        this.setVisible(false);
        frmP1.setVisible(true);
+       }
     }//GEN-LAST:event_btnProximo1ActionPerformed
 
     /**
@@ -686,6 +799,7 @@ public class frmNome extends javax.swing.JDialog
     private javax.swing.JButton btnX;
     private javax.swing.JButton btnY;
     private javax.swing.JButton btnZ;
+    private javax.swing.JLabel lblFundo;
     private javax.swing.JLabel lblNome;
     private javax.swing.JTextField txfNome;
     // End of variables declaration//GEN-END:variables
