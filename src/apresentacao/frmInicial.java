@@ -30,7 +30,7 @@ public class frmInicial extends javax.swing.JDialog {
 
         btnContinuar = new javax.swing.JButton();
         btnSair = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        lblImg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1525, 790));
@@ -70,17 +70,17 @@ public class frmInicial extends javax.swing.JDialog {
         getContentPane().add(btnSair);
         btnSair.setBounds(700, 580, 150, 50);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
-        jLabel1.setAlignmentY(0.0F);
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1525, 790);
+        lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
+        lblImg.setAlignmentY(0.0F);
+        getContentPane().add(lblImg);
+        lblImg.setBounds(0, 0, 1525, 790);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
         // TODO add your handling code here:
-        frmConteuro frmC = new frmConteuro(null, true);
+        frmConteudo frmC = new frmConteudo(null, true);
         this.setVisible(false);
         frmC.setVisible(true);
     }//GEN-LAST:event_btnContinuarActionPerformed
@@ -136,6 +136,6 @@ public class frmInicial extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnContinuar;
     private javax.swing.JButton btnSair;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblImg;
     // End of variables declaration//GEN-END:variables
 }
