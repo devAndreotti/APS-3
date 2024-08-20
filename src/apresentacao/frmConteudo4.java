@@ -4,22 +4,19 @@
  */
 package apresentacao;
 
-import modelo.Estaticos;
-
 /**
  *
  * @author powji
  */
-public class frmInicial extends javax.swing.JDialog {
+public class frmConteudo4 extends javax.swing.JDialog {
 
     /**
-     * Creates new form frmInicial
+     * Creates new form frmConteuro
      */
-    public frmInicial(java.awt.Frame parent, boolean modal) {
+    public frmConteudo4(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        
-        lblTotalRespo.setText("Total de respondentes: " + Estaticos.SOMA);
+
     }
 
     /**
@@ -33,21 +30,17 @@ public class frmInicial extends javax.swing.JDialog {
     {
 
         btnContinuar = new javax.swing.JButton();
-        lblTotalRespo = new javax.swing.JLabel();
-        btnSair = new javax.swing.JButton();
-        lblImg = new javax.swing.JLabel();
+        lblFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1525, 790));
-        setPreferredSize(new java.awt.Dimension(1525, 790));
         setResizable(false);
         getContentPane().setLayout(null);
 
         btnContinuar.setBackground(new java.awt.Color(74, 43, 23));
-        btnContinuar.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnContinuar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnContinuar.setForeground(new java.awt.Color(164, 127, 85));
         btnContinuar.setText("Continuar");
-        btnContinuar.setAlignmentX(762.0F);
         btnContinuar.setBorder(null);
         btnContinuar.addActionListener(new java.awt.event.ActionListener()
         {
@@ -57,50 +50,22 @@ public class frmInicial extends javax.swing.JDialog {
             }
         });
         getContentPane().add(btnContinuar);
-        btnContinuar.setBounds(700, 520, 150, 50);
+        btnContinuar.setBounds(1275, 633, 180, 70);
 
-        lblTotalRespo.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        lblTotalRespo.setForeground(new java.awt.Color(255, 255, 255));
-        lblTotalRespo.setText("Total de respondentes : 0");
-        getContentPane().add(lblTotalRespo);
-        lblTotalRespo.setBounds(680, 680, 260, 40);
-
-        btnSair.setBackground(new java.awt.Color(74, 43, 23));
-        btnSair.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        btnSair.setForeground(new java.awt.Color(164, 127, 85));
-        btnSair.setText("Sair");
-        btnSair.setAlignmentX(762.0F);
-        btnSair.setBorder(null);
-        btnSair.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnSairActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnSair);
-        btnSair.setBounds(700, 580, 150, 50);
-
-        lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/TelaInicial.jpg"))); // NOI18N
-        lblImg.setAlignmentY(0.0F);
-        getContentPane().add(lblImg);
-        lblImg.setBounds(0, 0, 1525, 790);
+        lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
+        lblFundo.setAlignmentY(0.0F);
+        getContentPane().add(lblFundo);
+        lblFundo.setBounds(0, 0, 1525, 790);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
         // TODO add your handling code here:
-        frmNome frmN = new frmNome(null,true);
+        frmPergunta3 frmP3 = new frmPergunta3(null,true);
         this.setVisible(false);
-        frmN.setVisible(true);
+        frmP3.setVisible(true);
     }//GEN-LAST:event_btnContinuarActionPerformed
-
-    private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
-        
-    }//GEN-LAST:event_btnSairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,20 +84,23 @@ public class frmInicial extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(frmInicial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmConteudo1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(frmInicial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmConteudo1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(frmInicial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmConteudo1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(frmInicial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmConteudo1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                frmInicial dialog = new frmInicial(new javax.swing.JFrame(), true);
+                frmConteudo1 dialog = new frmConteudo1(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -146,8 +114,6 @@ public class frmInicial extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnContinuar;
-    private javax.swing.JButton btnSair;
-    private javax.swing.JLabel lblImg;
-    private javax.swing.JLabel lblTotalRespo;
+    private javax.swing.JLabel lblFundo;
     // End of variables declaration//GEN-END:variables
 }

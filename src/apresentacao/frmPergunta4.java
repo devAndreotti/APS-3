@@ -11,14 +11,13 @@ import modelo.*;
  *
  * @author User
  */
-public class frmPergunta2 extends javax.swing.JDialog
+public class frmPergunta4 extends javax.swing.JDialog
 {
-
     
     /**
      * Creates new form frmPergunta2
      */
-    public frmPergunta2(java.awt.Frame parent, boolean modal)
+    public frmPergunta4(java.awt.Frame parent, boolean modal)
     {
         super(parent, modal);
         initComponents();
@@ -34,11 +33,11 @@ public class frmPergunta2 extends javax.swing.JDialog
     private void initComponents()
     {
 
-        gbtnP2 = new javax.swing.ButtonGroup();
-        lblPergunta2 = new javax.swing.JLabel();
-        rbdP2A = new javax.swing.JRadioButton();
-        rbdP2B = new javax.swing.JRadioButton();
-        rbdP2C = new javax.swing.JRadioButton();
+        gbtnP4 = new javax.swing.ButtonGroup();
+        lblPergunta4 = new javax.swing.JLabel();
+        rbdP4A = new javax.swing.JRadioButton();
+        rbdP4B = new javax.swing.JRadioButton();
+        rbdP4C = new javax.swing.JRadioButton();
         lblTotalRespo = new javax.swing.JLabel();
         lblResposta = new javax.swing.JLabel();
         btnContinuar = new javax.swing.JButton();
@@ -51,39 +50,46 @@ public class frmPergunta2 extends javax.swing.JDialog
         setResizable(false);
         getContentPane().setLayout(null);
 
-        lblPergunta2.setBackground(new java.awt.Color(74, 43, 23));
-        lblPergunta2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        lblPergunta2.setForeground(new java.awt.Color(164, 127, 85));
-        lblPergunta2.setText("Pergunta 2: Qual foi o primeiro rover a pousar em Marte? ");
-        getContentPane().add(lblPergunta2);
-        lblPergunta2.setBounds(470, 170, 470, 21);
+        lblPergunta4.setBackground(new java.awt.Color(74, 43, 23));
+        lblPergunta4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblPergunta4.setForeground(new java.awt.Color(74, 43, 23));
+        lblPergunta4.setText("Pergunta 4: Qual foi a região designada para o pouso da sonda Curiosity em 2012? ");
+        getContentPane().add(lblPergunta4);
+        lblPergunta4.setBounds(380, 260, 630, 21);
 
-        rbdP2A.setBackground(new java.awt.Color(74, 43, 23));
-        gbtnP2.add(rbdP2A);
-        rbdP2A.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        rbdP2A.setForeground(new java.awt.Color(164, 127, 85));
-        rbdP2A.setText("a) Spirit");
-        rbdP2A.setBorder(null);
-        getContentPane().add(rbdP2A);
-        rbdP2A.setBounds(600, 300, 110, 21);
+        rbdP4A.setBackground(new java.awt.Color(164, 127, 85));
+        gbtnP4.add(rbdP4A);
+        rbdP4A.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP4A.setForeground(new java.awt.Color(74, 43, 23));
+        rbdP4A.setText("a) Cratera de Jazero");
+        rbdP4A.setBorder(null);
+        getContentPane().add(rbdP4A);
+        rbdP4A.setBounds(600, 330, 190, 21);
 
-        rbdP2B.setBackground(new java.awt.Color(74, 43, 23));
-        gbtnP2.add(rbdP2B);
-        rbdP2B.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        rbdP2B.setForeground(new java.awt.Color(164, 127, 85));
-        rbdP2B.setText("b) Perseverance");
-        rbdP2B.setBorder(null);
-        getContentPane().add(rbdP2B);
-        rbdP2B.setBounds(600, 350, 149, 21);
+        rbdP4B.setBackground(new java.awt.Color(164, 127, 85));
+        gbtnP4.add(rbdP4B);
+        rbdP4B.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP4B.setForeground(new java.awt.Color(74, 43, 23));
+        rbdP4B.setText("b) Ares Vallis");
+        rbdP4B.setBorder(null);
+        getContentPane().add(rbdP4B);
+        rbdP4B.setBounds(600, 400, 160, 21);
 
-        rbdP2C.setBackground(new java.awt.Color(74, 43, 23));
-        gbtnP2.add(rbdP2C);
-        rbdP2C.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        rbdP2C.setForeground(new java.awt.Color(164, 127, 85));
-        rbdP2C.setText("c) Sojurner");
-        rbdP2C.setBorder(null);
-        getContentPane().add(rbdP2C);
-        rbdP2C.setBounds(600, 410, 116, 21);
+        rbdP4C.setBackground(new java.awt.Color(164, 127, 85));
+        gbtnP4.add(rbdP4C);
+        rbdP4C.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP4C.setForeground(new java.awt.Color(74, 43, 23));
+        rbdP4C.setText("c) Cratera Gale");
+        rbdP4C.setBorder(null);
+        rbdP4C.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                rbdP4CActionPerformed(evt);
+            }
+        });
+        getContentPane().add(rbdP4C);
+        rbdP4C.setBounds(600, 460, 170, 21);
 
         lblTotalRespo.setBackground(new java.awt.Color(74, 43, 23));
         lblTotalRespo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -121,67 +127,32 @@ public class frmPergunta2 extends javax.swing.JDialog
 
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnContinuarActionPerformed
     {//GEN-HEADEREND:event_btnContinuarActionPerformed
-         if (rbdP2C.isSelected())
+
+        
+        
+        if (rbdP4C.isSelected())
         {
-            Estaticos.RESP2 = "acerto";
+           Estaticos.RESP4 = "acerto";
             Estaticos.SOMAACERTOS++; 
-            frmConteudo3 frmC3 = new frmConteudo3(null, true);
+            frmPergunta5 frmP5 = new frmPergunta5(null, true);
             this.setVisible(false);
-            frmC3.setVisible(true);           
+            frmP5.setVisible(true);           
 
         }
         else
         {
-            Estaticos.RESP2 = "erro";
-            frmConteudo3 frmC3 = new frmConteudo3(null, true);
+            Estaticos.RESP4 = "erro";
+            frmPergunta5 frmP5 = new frmPergunta5(null, true);
             this.setVisible(false);
-            frmC3.setVisible(true);     
+            frmP5.setVisible(true);       
         } 
-         
-         
-      
-//        
-//        if (rbdP3A.isSelected())
-//        {
-//            resp3 = "acerto";
-//            Estaticos.SOMAACERTOS++; 
-//        }
-//        else
-//        {
-//            resp3 = "erro";
-//        } 
-//        
-//        
-//        if (rbdP4C.isSelected())
-//        {
-//            resp4 = "acerto";
-//            Estaticos.SOMAACERTOS++; 
-//        }
-//        else
-//        {
-//            resp4 = "erro";
-//        } 
-//        
-//        
-//        if (rbdP5C.isSelected())
-//        {
-//            resp5 = "acerto";
-//            Estaticos.SOMAACERTOS++; 
-//        }
-//        else
-//        {
-//            resp5 = "erro";
-//        }    
-//        
-//        Controle controle = new Controle(Estaticos.NOME, Estaticos.RESP1, resp2, resp3, resp4, resp5);
-//
-//        Estaticos.SOMA++;
-//
-//        
-//        frmFinal frmF = new frmFinal(null, true);
-//        this.setVisible(false);
-//        frmF.setVisible(true);
+        
+  
     }//GEN-LAST:event_btnContinuarActionPerformed
+
+    private void rbdP4CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbdP4CActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbdP4CActionPerformed
 
     /**
      * @param args the command line arguments
@@ -243,13 +214,13 @@ public class frmPergunta2 extends javax.swing.JDialog
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnContinuar;
-    private javax.swing.ButtonGroup gbtnP2;
+    private javax.swing.ButtonGroup gbtnP4;
     private javax.swing.JLabel lblFundo;
-    private javax.swing.JLabel lblPergunta2;
+    private javax.swing.JLabel lblPergunta4;
     private javax.swing.JLabel lblResposta;
     private javax.swing.JLabel lblTotalRespo;
-    private javax.swing.JRadioButton rbdP2A;
-    private javax.swing.JRadioButton rbdP2B;
-    private javax.swing.JRadioButton rbdP2C;
+    private javax.swing.JRadioButton rbdP4A;
+    private javax.swing.JRadioButton rbdP4B;
+    private javax.swing.JRadioButton rbdP4C;
     // End of variables declaration//GEN-END:variables
 }

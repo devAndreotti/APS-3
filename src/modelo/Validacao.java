@@ -1,27 +1,26 @@
 package modelo;
 
-import apresentacao.*;
 
 public class Validacao extends AbsPropriedades
 {
-    // Construtor que recebe uma resposta e chama o método Executar
-    public Validacao(String resposta)
+    // Construtor que recebe o nome e chama o método Executar
+    public Validacao(String nome)
     {
-        this.resposta = resposta;
+        this.nome = nome;
         this.Executar();
     }
     
-    // Método para executar a validação da resposta
+    // Método para executar a validação do nome
     public void Executar()
     {
         Estaticos.MENSAGEM = "";
-        if(this.resposta.equals("verdadeiro") || this.resposta.equals("falso"))
+        if(this.nome.equals(""))
         {
-             this.resp1 = resposta;
+             Estaticos.MENSAGEM = "Nome não pode ser vazio";
         }
         else
         {
-            Estaticos.MENSAGEM = "Digite verdadeiro ou falso";
+            this.nome = nome;
         }
     }
     

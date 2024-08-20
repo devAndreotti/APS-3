@@ -699,16 +699,28 @@ public class frmNome extends javax.swing.JDialog
 
     private void btnProximo1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnProximo1ActionPerformed
     {//GEN-HEADEREND:event_btnProximo1ActionPerformed
-       if (txfNome.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Nome não pode ser vazio");
-       }
-       else
-       {
-       Estaticos.NOME = txfNome.getText();
-       frmPergunta1 frmP1 = new frmPergunta1(null, true);
-       this.setVisible(false);
-       frmP1.setVisible(true);
-       }
+       Controle controle = new Controle(txfNome.getText());
+        if (Estaticos.MENSAGEM.equals(""))
+        {
+            Estaticos.NOME = txfNome.getText();
+            frmConteudo1 frmC1 = new frmConteudo1(null, true);
+            this.setVisible(false);
+            frmC1.setVisible(true);   
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null, Estaticos.MENSAGEM);
+        }
+//        if (txfNome.getText().isEmpty()) {
+//            JOptionPane.showMessageDialog(null, "Nome não pode ser vazio");
+//       }
+//       else
+//       {
+//       Estaticos.NOME = txfNome.getText();
+//       frmPergunta1 frmP1 = new frmPergunta1(null, true);
+//       this.setVisible(false);
+//       frmP1.setVisible(true);
+//       }
     }//GEN-LAST:event_btnProximo1ActionPerformed
 
     /**

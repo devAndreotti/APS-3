@@ -5,6 +5,8 @@
 package apresentacao;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.TimerTask;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
@@ -23,6 +25,14 @@ public class frmFinal extends javax.swing.JDialog
     {
         super(parent, modal);
         initComponents();
+        
+        String porcentagens = Visitantes.pesquisaSatisfacao();
+        txAAvalicaoSistema.setText(porcentagens); 
+        
+        String porcentagensacertos = Visitantes.porcentagensDeAcertos();
+        txAPorcentagemAcerto.setText(porcentagensacertos);         
+
+
         lblNome.setText(Estaticos.NOME);
         lblTotalRespo.setText("Total de respondentes: " + Estaticos.SOMA);
         if(Estaticos.SOMAACERTOS >= 3){
@@ -36,13 +46,14 @@ public class frmFinal extends javax.swing.JDialog
         }
         
         
-        new java.util.Timer().schedule(new TimerTask() {
-            @Override
-            public void run() {
-                //executar ação aqui
-            btnFinalizar.doClick();
-            }
-        }, 30000);
+        
+//        new java.util.Timer().schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                //executar ação aqui
+//            btnFinalizar.doClick();
+//            }
+//        }, 30000);
 
         
         
@@ -58,8 +69,16 @@ public class frmFinal extends javax.swing.JDialog
     private void initComponents()
     {
 
+        lblAcertos2 = new javax.swing.JLabel();
         lblTotalRespo = new javax.swing.JLabel();
+        lblAcertos1 = new javax.swing.JLabel();
+        spPorcentagemAcerto = new javax.swing.JScrollPane();
+        txAPorcentagemAcerto = new javax.swing.JTextArea();
+        spAvaliacaoSistema = new javax.swing.JScrollPane();
+        txAAvalicaoSistema = new javax.swing.JTextArea();
+        btnAvaliacaoSistema = new javax.swing.JButton();
         btnFinalizar = new javax.swing.JButton();
+        btnporcetagem = new javax.swing.JButton();
         lblNome = new javax.swing.JLabel();
         lblAcertos = new javax.swing.JLabel();
         lblSituacao = new javax.swing.JLabel();
@@ -73,11 +92,63 @@ public class frmFinal extends javax.swing.JDialog
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        lblAcertos2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblAcertos2.setForeground(new java.awt.Color(164, 127, 85));
+        lblAcertos2.setText("Porcentagem de acertos:");
+        getContentPane().add(lblAcertos2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 60, 250, 50));
+
         lblTotalRespo.setBackground(new java.awt.Color(0, 0, 0));
         lblTotalRespo.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lblTotalRespo.setForeground(new java.awt.Color(255, 255, 255));
         lblTotalRespo.setText("total de respondentes :");
         getContentPane().add(lblTotalRespo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 700, 330, 40));
+
+        lblAcertos1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblAcertos1.setForeground(new java.awt.Color(164, 127, 85));
+        lblAcertos1.setText("Avaliação do sistema:");
+        getContentPane().add(lblAcertos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 210, 50));
+
+        txAPorcentagemAcerto.setEditable(false);
+        txAPorcentagemAcerto.setBackground(new java.awt.Color(128, 88, 53));
+        txAPorcentagemAcerto.setColumns(20);
+        txAPorcentagemAcerto.setFont(new java.awt.Font("Times New Roman", 0, 28)); // NOI18N
+        txAPorcentagemAcerto.setForeground(new java.awt.Color(74, 43, 23));
+        txAPorcentagemAcerto.setLineWrap(true);
+        txAPorcentagemAcerto.setRows(5);
+        txAPorcentagemAcerto.setCaretColor(new java.awt.Color(0, 0, 0));
+        txAPorcentagemAcerto.setFocusable(false);
+        txAPorcentagemAcerto.setSelectedTextColor(new java.awt.Color(0, 0, 0));
+        spPorcentagemAcerto.setViewportView(txAPorcentagemAcerto);
+
+        getContentPane().add(spPorcentagemAcerto, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 110, 280, 210));
+
+        txAAvalicaoSistema.setEditable(false);
+        txAAvalicaoSistema.setBackground(new java.awt.Color(128, 88, 53));
+        txAAvalicaoSistema.setColumns(20);
+        txAAvalicaoSistema.setFont(new java.awt.Font("Times New Roman", 0, 28)); // NOI18N
+        txAAvalicaoSistema.setForeground(new java.awt.Color(74, 43, 23));
+        txAAvalicaoSistema.setLineWrap(true);
+        txAAvalicaoSistema.setRows(5);
+        txAAvalicaoSistema.setCaretColor(new java.awt.Color(0, 0, 0));
+        txAAvalicaoSistema.setFocusable(false);
+        txAAvalicaoSistema.setSelectedTextColor(new java.awt.Color(0, 0, 0));
+        spAvaliacaoSistema.setViewportView(txAAvalicaoSistema);
+
+        getContentPane().add(spAvaliacaoSistema, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 250, 170));
+
+        btnAvaliacaoSistema.setBackground(new java.awt.Color(74, 43, 23));
+        btnAvaliacaoSistema.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnAvaliacaoSistema.setForeground(new java.awt.Color(164, 127, 85));
+        btnAvaliacaoSistema.setText("Avaliação do sistema");
+        btnAvaliacaoSistema.setBorder(null);
+        btnAvaliacaoSistema.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnAvaliacaoSistemaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnAvaliacaoSistema, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 670, 240, 40));
 
         btnFinalizar.setBackground(new java.awt.Color(74, 43, 23));
         btnFinalizar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -92,6 +163,20 @@ public class frmFinal extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnFinalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 640, 150, 60));
+
+        btnporcetagem.setBackground(new java.awt.Color(74, 43, 23));
+        btnporcetagem.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnporcetagem.setForeground(new java.awt.Color(164, 127, 85));
+        btnporcetagem.setText("Porcentagem de Acertos");
+        btnporcetagem.setBorder(null);
+        btnporcetagem.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnporcetagemActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnporcetagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 370, 240, 40));
 
         lblNome.setBackground(new java.awt.Color(74, 43, 23));
         lblNome.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
@@ -117,7 +202,7 @@ public class frmFinal extends javax.swing.JDialog
         btnMostrarDados.setBackground(new java.awt.Color(74, 43, 23));
         btnMostrarDados.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnMostrarDados.setForeground(new java.awt.Color(164, 127, 85));
-        btnMostrarDados.setText("respostas ");
+        btnMostrarDados.setText("Classificação");
         btnMostrarDados.setBorder(null);
         btnMostrarDados.addActionListener(new java.awt.event.ActionListener()
         {
@@ -126,7 +211,7 @@ public class frmFinal extends javax.swing.JDialog
                 btnMostrarDadosActionPerformed(evt);
             }
         });
-        getContentPane().add(btnMostrarDados, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 390, 132, -1));
+        getContentPane().add(btnMostrarDados, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, 240, 40));
 
         lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
         lblFundo.setAlignmentY(0.0F);
@@ -144,21 +229,47 @@ public class frmFinal extends javax.swing.JDialog
 
     private void btnMostrarDadosActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnMostrarDadosActionPerformed
     {//GEN-HEADEREND:event_btnMostrarDadosActionPerformed
+    // Cria uma cópia da lista de visitantes
+    List<Visitantes> visitantesOrdenados = new ArrayList<>(Visitantes.getListaVisitantes());
 
-    // Cria uma instância de StringBuilder para construir uma string 
-        // StringBuilder é uma classe do pacote java.lang.
-    StringBuilder sb = new StringBuilder(); 
+    // Ordena os visitantes pelo número de acertos em ordem decrescente
+    visitantesOrdenados.sort((v1, v2) -> {
+        int acertosV1 = Integer.parseInt(v1.acertos);
+        int acertosV2 = Integer.parseInt(v2.acertos);
+        return Integer.compare(acertosV2, acertosV1); // Decrescente
+    });
 
-    // Vai ate a lista de visitantes obtida pelo método estático getListaVisitantes()
-    for (Visitantes visitante : Visitantes.getListaVisitantes()) 
-    {
-    // Adiciona a representação em string de cada visitante ao StringBuilder, seguida por uma nova linha
-    sb.append(visitante.toString()).append("\n"); 
+    // Cria uma instância de StringBuilder para construir a string de saída
+    StringBuilder sb = new StringBuilder();
+
+    // Adiciona os visitantes ao StringBuilder, em ordem de ranking
+    int rank = 1;
+    for (Visitantes visitante : visitantesOrdenados) {
+        sb.append("Rank ").append(rank).append(": ").append(visitante.toString()).append("\n");
+        rank++;
     }
-    // Exibe uma caixa de diálogo com o conteúdo do StringBuilder, que contém as informações dos visitantes
-    JOptionPane.showMessageDialog(null, sb); 
+
+    // Exibe uma caixa de diálogo com o conteúdo do StringBuilder, que contém o ranking dos visitantes
+    JOptionPane.showMessageDialog(null, sb.toString(), "Ranking de Visitantes", JOptionPane.INFORMATION_MESSAGE);
+        
 
     }//GEN-LAST:event_btnMostrarDadosActionPerformed
+
+    private void btnporcetagemActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnporcetagemActionPerformed
+    {//GEN-HEADEREND:event_btnporcetagemActionPerformed
+       String porcentagens = Visitantes.porcentagensDeAcertos();
+
+       // Exibir o resultado em uma caixa de diálogo
+       JOptionPane.showMessageDialog(null, porcentagens, "Porcentagem de Acertos", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_btnporcetagemActionPerformed
+
+    private void btnAvaliacaoSistemaActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnAvaliacaoSistemaActionPerformed
+    {//GEN-HEADEREND:event_btnAvaliacaoSistemaActionPerformed
+       String pesquisaSatisfacao = Visitantes.pesquisaSatisfacao();
+
+       // Exibir o resultado em uma caixa de diálogo
+       JOptionPane.showMessageDialog(null, pesquisaSatisfacao, "Porcentagem de Acertos", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_btnAvaliacaoSistemaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -219,12 +330,20 @@ public class frmFinal extends javax.swing.JDialog
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAvaliacaoSistema;
     private javax.swing.JButton btnFinalizar;
     private javax.swing.JButton btnMostrarDados;
+    private javax.swing.JButton btnporcetagem;
     private javax.swing.JLabel lblAcertos;
+    private javax.swing.JLabel lblAcertos1;
+    private javax.swing.JLabel lblAcertos2;
     private javax.swing.JLabel lblFundo;
     private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblSituacao;
     private javax.swing.JLabel lblTotalRespo;
+    private javax.swing.JScrollPane spAvaliacaoSistema;
+    private javax.swing.JScrollPane spPorcentagemAcerto;
+    private javax.swing.JTextArea txAAvalicaoSistema;
+    private javax.swing.JTextArea txAPorcentagemAcerto;
     // End of variables declaration//GEN-END:variables
 }

@@ -11,8 +11,7 @@ public abstract class AbsPropriedades
     public String resp3;
     public String resp4;
     public String resp5;
-    
-
- 
-    
+    public String acertos;
+    public String satisfacao;
+     
 }

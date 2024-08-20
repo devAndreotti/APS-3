@@ -35,39 +35,12 @@ public class frmPergunta1 extends javax.swing.JDialog
     private void initComponents()
     {
 
+        gbtVF = new javax.swing.ButtonGroup();
         lblTitulo = new javax.swing.JLabel();
+        rbdVerdadeiro = new javax.swing.JRadioButton();
+        rbdFalso = new javax.swing.JRadioButton();
         btnProximo = new javax.swing.JButton();
-        btnQ = new javax.swing.JButton();
-        btnW = new javax.swing.JButton();
-        btnE = new javax.swing.JButton();
         lblPergunta1 = new javax.swing.JLabel();
-        txfResposta1 = new javax.swing.JTextField();
-        lblVF = new javax.swing.JLabel();
-        btnR = new javax.swing.JButton();
-        btnT = new javax.swing.JButton();
-        btnO = new javax.swing.JButton();
-        btnP = new javax.swing.JButton();
-        btnY = new javax.swing.JButton();
-        btnU = new javax.swing.JButton();
-        btnI = new javax.swing.JButton();
-        btnF = new javax.swing.JButton();
-        btnG = new javax.swing.JButton();
-        btnL = new javax.swing.JButton();
-        btnH = new javax.swing.JButton();
-        btnJ = new javax.swing.JButton();
-        btnK = new javax.swing.JButton();
-        btnA = new javax.swing.JButton();
-        btnS = new javax.swing.JButton();
-        btnD = new javax.swing.JButton();
-        btnN = new javax.swing.JButton();
-        btnM = new javax.swing.JButton();
-        btnZ = new javax.swing.JButton();
-        btnX = new javax.swing.JButton();
-        btnC = new javax.swing.JButton();
-        btnV = new javax.swing.JButton();
-        btnB = new javax.swing.JButton();
-        btnApagar = new javax.swing.JButton();
-        btnEspaço = new javax.swing.JButton();
         lblFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -85,6 +58,30 @@ public class frmPergunta1 extends javax.swing.JDialog
         getContentPane().add(lblTitulo);
         lblTitulo.setBounds(550, 70, 506, 29);
 
+        rbdVerdadeiro.setBackground(new java.awt.Color(74, 43, 23));
+        gbtVF.add(rbdVerdadeiro);
+        rbdVerdadeiro.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdVerdadeiro.setForeground(new java.awt.Color(164, 127, 85));
+        rbdVerdadeiro.setText("Verdadeiro");
+        rbdVerdadeiro.setFocusPainted(false);
+        getContentPane().add(rbdVerdadeiro);
+        rbdVerdadeiro.setBounds(570, 360, 140, 29);
+
+        rbdFalso.setBackground(new java.awt.Color(74, 43, 23));
+        gbtVF.add(rbdFalso);
+        rbdFalso.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdFalso.setForeground(new java.awt.Color(164, 127, 85));
+        rbdFalso.setText("Falso");
+        rbdFalso.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                rbdFalsoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(rbdFalso);
+        rbdFalso.setBounds(890, 360, 100, 29);
+
         btnProximo.setBackground(new java.awt.Color(74, 43, 23));
         btnProximo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnProximo.setForeground(new java.awt.Color(164, 127, 85));
@@ -98,52 +95,7 @@ public class frmPergunta1 extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnProximo);
-        btnProximo.setBounds(1320, 590, 130, 50);
-
-        btnQ.setBackground(new java.awt.Color(74, 43, 23));
-        btnQ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnQ.setForeground(new java.awt.Color(164, 127, 85));
-        btnQ.setText("Q");
-        btnQ.setBorder(null);
-        btnQ.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnQActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnQ);
-        btnQ.setBounds(440, 380, 57, 21);
-
-        btnW.setBackground(new java.awt.Color(74, 43, 23));
-        btnW.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnW.setForeground(new java.awt.Color(164, 127, 85));
-        btnW.setText("W");
-        btnW.setBorder(null);
-        btnW.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnWActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnW);
-        btnW.setBounds(510, 380, 57, 21);
-
-        btnE.setBackground(new java.awt.Color(74, 43, 23));
-        btnE.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnE.setForeground(new java.awt.Color(164, 127, 85));
-        btnE.setText("E");
-        btnE.setBorder(null);
-        btnE.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnEActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnE);
-        btnE.setBounds(590, 380, 57, 21);
+        btnProximo.setBounds(1310, 640, 160, 70);
 
         lblPergunta1.setBackground(new java.awt.Color(74, 43, 23));
         lblPergunta1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -152,402 +104,6 @@ public class frmPergunta1 extends javax.swing.JDialog
         lblPergunta1.setPreferredSize(new java.awt.Dimension(1105, 21));
         getContentPane().add(lblPergunta1);
         lblPergunta1.setBounds(240, 240, 1130, 50);
-
-        txfResposta1.setBackground(new java.awt.Color(74, 43, 23));
-        txfResposta1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        txfResposta1.setForeground(new java.awt.Color(164, 127, 85));
-        txfResposta1.setBorder(null);
-        txfResposta1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                txfResposta1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txfResposta1);
-        txfResposta1.setBounds(410, 320, 775, 21);
-
-        lblVF.setBackground(new java.awt.Color(74, 43, 23));
-        lblVF.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        lblVF.setForeground(new java.awt.Color(196, 168, 136));
-        lblVF.setText("digite \"verdadeiro\" ou \"falso\"");
-        getContentPane().add(lblVF);
-        lblVF.setBounds(680, 290, 290, 21);
-
-        btnR.setBackground(new java.awt.Color(74, 43, 23));
-        btnR.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnR.setForeground(new java.awt.Color(164, 127, 85));
-        btnR.setText("R");
-        btnR.setBorder(null);
-        btnR.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnRActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnR);
-        btnR.setBounds(660, 380, 57, 21);
-
-        btnT.setBackground(new java.awt.Color(74, 43, 23));
-        btnT.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnT.setForeground(new java.awt.Color(164, 127, 85));
-        btnT.setText("T");
-        btnT.setBorder(null);
-        btnT.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnTActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnT);
-        btnT.setBounds(740, 380, 57, 21);
-
-        btnO.setBackground(new java.awt.Color(74, 43, 23));
-        btnO.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnO.setForeground(new java.awt.Color(164, 127, 85));
-        btnO.setText("O");
-        btnO.setBorder(null);
-        btnO.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnOActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnO);
-        btnO.setBounds(1040, 380, 57, 21);
-
-        btnP.setBackground(new java.awt.Color(74, 43, 23));
-        btnP.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnP.setForeground(new java.awt.Color(164, 127, 85));
-        btnP.setText("P");
-        btnP.setBorder(null);
-        btnP.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnPActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnP);
-        btnP.setBounds(1110, 380, 57, 21);
-
-        btnY.setBackground(new java.awt.Color(74, 43, 23));
-        btnY.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnY.setForeground(new java.awt.Color(164, 127, 85));
-        btnY.setText("Y");
-        btnY.setBorder(null);
-        btnY.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnYActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnY);
-        btnY.setBounds(810, 380, 57, 21);
-
-        btnU.setBackground(new java.awt.Color(74, 43, 23));
-        btnU.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnU.setForeground(new java.awt.Color(164, 127, 85));
-        btnU.setText("U");
-        btnU.setBorder(null);
-        btnU.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnUActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnU);
-        btnU.setBounds(890, 380, 57, 21);
-
-        btnI.setBackground(new java.awt.Color(74, 43, 23));
-        btnI.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnI.setForeground(new java.awt.Color(164, 127, 85));
-        btnI.setText("I");
-        btnI.setBorder(null);
-        btnI.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnIActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnI);
-        btnI.setBounds(960, 380, 57, 21);
-
-        btnF.setBackground(new java.awt.Color(74, 43, 23));
-        btnF.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnF.setForeground(new java.awt.Color(164, 127, 85));
-        btnF.setText("F");
-        btnF.setBorder(null);
-        btnF.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnFActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnF);
-        btnF.setBounds(700, 430, 57, 21);
-
-        btnG.setBackground(new java.awt.Color(74, 43, 23));
-        btnG.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnG.setForeground(new java.awt.Color(164, 127, 85));
-        btnG.setText("G");
-        btnG.setBorder(null);
-        btnG.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnGActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnG);
-        btnG.setBounds(780, 430, 57, 21);
-
-        btnL.setBackground(new java.awt.Color(74, 43, 23));
-        btnL.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnL.setForeground(new java.awt.Color(164, 127, 85));
-        btnL.setText("L");
-        btnL.setBorder(null);
-        btnL.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnLActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnL);
-        btnL.setBounds(1080, 430, 57, 21);
-
-        btnH.setBackground(new java.awt.Color(74, 43, 23));
-        btnH.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnH.setForeground(new java.awt.Color(164, 127, 85));
-        btnH.setText("H");
-        btnH.setBorder(null);
-        btnH.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnHActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnH);
-        btnH.setBounds(850, 430, 57, 21);
-
-        btnJ.setBackground(new java.awt.Color(74, 43, 23));
-        btnJ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnJ.setForeground(new java.awt.Color(164, 127, 85));
-        btnJ.setText("J");
-        btnJ.setBorder(null);
-        btnJ.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnJActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnJ);
-        btnJ.setBounds(930, 430, 57, 21);
-
-        btnK.setBackground(new java.awt.Color(74, 43, 23));
-        btnK.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnK.setForeground(new java.awt.Color(164, 127, 85));
-        btnK.setText("K");
-        btnK.setBorder(null);
-        btnK.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnKActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnK);
-        btnK.setBounds(1000, 430, 57, 21);
-
-        btnA.setBackground(new java.awt.Color(74, 43, 23));
-        btnA.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnA.setForeground(new java.awt.Color(164, 127, 85));
-        btnA.setText("A");
-        btnA.setBorder(null);
-        btnA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnAActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnA);
-        btnA.setBounds(480, 430, 57, 21);
-
-        btnS.setBackground(new java.awt.Color(74, 43, 23));
-        btnS.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnS.setForeground(new java.awt.Color(164, 127, 85));
-        btnS.setText("S");
-        btnS.setBorder(null);
-        btnS.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnSActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnS);
-        btnS.setBounds(550, 430, 57, 21);
-
-        btnD.setBackground(new java.awt.Color(74, 43, 23));
-        btnD.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnD.setForeground(new java.awt.Color(164, 127, 85));
-        btnD.setText("D");
-        btnD.setBorder(null);
-        btnD.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnDActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnD);
-        btnD.setBounds(630, 430, 57, 21);
-
-        btnN.setBackground(new java.awt.Color(74, 43, 23));
-        btnN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnN.setForeground(new java.awt.Color(164, 127, 85));
-        btnN.setText("N");
-        btnN.setBorder(null);
-        btnN.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnNActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnN);
-        btnN.setBounds(930, 480, 57, 21);
-
-        btnM.setBackground(new java.awt.Color(74, 43, 23));
-        btnM.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnM.setForeground(new java.awt.Color(164, 127, 85));
-        btnM.setText("M");
-        btnM.setBorder(null);
-        btnM.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnMActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnM);
-        btnM.setBounds(1000, 480, 57, 21);
-
-        btnZ.setBackground(new java.awt.Color(74, 43, 23));
-        btnZ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnZ.setForeground(new java.awt.Color(164, 127, 85));
-        btnZ.setText("Z");
-        btnZ.setBorder(null);
-        btnZ.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnZActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnZ);
-        btnZ.setBounds(550, 480, 57, 21);
-
-        btnX.setBackground(new java.awt.Color(74, 43, 23));
-        btnX.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnX.setForeground(new java.awt.Color(164, 127, 85));
-        btnX.setText("X");
-        btnX.setBorder(null);
-        btnX.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnXActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnX);
-        btnX.setBounds(630, 480, 57, 21);
-
-        btnC.setBackground(new java.awt.Color(74, 43, 23));
-        btnC.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnC.setForeground(new java.awt.Color(164, 127, 85));
-        btnC.setText("C");
-        btnC.setBorder(null);
-        btnC.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnCActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnC);
-        btnC.setBounds(700, 480, 57, 21);
-
-        btnV.setBackground(new java.awt.Color(74, 43, 23));
-        btnV.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnV.setForeground(new java.awt.Color(164, 127, 85));
-        btnV.setText("V");
-        btnV.setBorder(null);
-        btnV.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnVActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnV);
-        btnV.setBounds(780, 480, 57, 21);
-
-        btnB.setBackground(new java.awt.Color(74, 43, 23));
-        btnB.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnB.setForeground(new java.awt.Color(164, 127, 85));
-        btnB.setText("B");
-        btnB.setBorder(null);
-        btnB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnBActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnB);
-        btnB.setBounds(850, 480, 57, 21);
-
-        btnApagar.setBackground(new java.awt.Color(74, 43, 23));
-        btnApagar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnApagar.setForeground(new java.awt.Color(164, 127, 85));
-        btnApagar.setText("Backspace");
-        btnApagar.setBorder(null);
-        btnApagar.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnApagarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnApagar);
-        btnApagar.setBounds(1220, 380, 134, 21);
-
-        btnEspaço.setBackground(new java.awt.Color(74, 43, 23));
-        btnEspaço.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnEspaço.setForeground(new java.awt.Color(164, 127, 85));
-        btnEspaço.setText("Space");
-        btnEspaço.setBorder(null);
-        btnEspaço.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                btnEspaçoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnEspaço);
-        btnEspaço.setBounds(550, 540, 517, 36);
 
         lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
         lblFundo.setAlignmentY(0.0F);
@@ -562,197 +118,42 @@ public class frmPergunta1 extends javax.swing.JDialog
     {//GEN-HEADEREND:event_btnProximoActionPerformed
         Estaticos.SOMAACERTOS = 0;
 //        Estaticos.NOME = txfNome.getText();
-        Controle controle = new Controle(txfResposta1.getText());
-        if(txfResposta1.equals("verdadeiro")){
-            Estaticos.RESP1 = "erro";
-        }else{
+//        Controle controle = new Controle(rbdFalso.getText());
+        if(rbdVerdadeiro.isSelected()){
             Estaticos.RESP1 = "acerto";
             Estaticos.SOMAACERTOS++; 
-        }
-        
-                
-        if (Estaticos.MENSAGEM.equals(""))
-        {
-             
-           frmPergunta2 frmP2 = new frmPergunta2(null, true);
+            frmPergunta2 frmP2 = new frmPergunta2(null, true);
             this.setVisible(false);
             frmP2.setVisible(true);
         }
         else
         {
-            JOptionPane.showMessageDialog(null, Estaticos.MENSAGEM);
+            Estaticos.RESP1 = "erro";
+            frmPergunta2 frmP2 = new frmPergunta2(null, true);
+            this.setVisible(false);
+            frmP2.setVisible(true);
         }
+        
+                
+//        if (Estaticos.MENSAGEM.equals(""))
+//        {
+//             
+//           frmPergunta2 frmP2 = new frmPergunta2(null, true);
+//            this.setVisible(false);
+//            frmP2.setVisible(true);
+//        }
+//        else
+//        {
+//            JOptionPane.showMessageDialog(null, Estaticos.MENSAGEM);
+//        }
 
     }//GEN-LAST:event_btnProximoActionPerformed
 
-    private void btnRActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnRActionPerformed
-    {//GEN-HEADEREND:event_btnRActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "r");
-    }//GEN-LAST:event_btnRActionPerformed
-
-    private void btnOActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnOActionPerformed
-    {//GEN-HEADEREND:event_btnOActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "o");
-    }//GEN-LAST:event_btnOActionPerformed
-
-    private void btnIActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnIActionPerformed
-    {//GEN-HEADEREND:event_btnIActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "i");
-    }//GEN-LAST:event_btnIActionPerformed
-
-    private void btnPActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnPActionPerformed
-    {//GEN-HEADEREND:event_btnPActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "p");
-    }//GEN-LAST:event_btnPActionPerformed
-
-    private void btnFActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnFActionPerformed
-    {//GEN-HEADEREND:event_btnFActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "f");
-    }//GEN-LAST:event_btnFActionPerformed
-
-    private void btnLActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnLActionPerformed
-    {//GEN-HEADEREND:event_btnLActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "l");
-    }//GEN-LAST:event_btnLActionPerformed
-
-    private void btnKActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnKActionPerformed
-    {//GEN-HEADEREND:event_btnKActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "k");
-    }//GEN-LAST:event_btnKActionPerformed
-
-    private void btnDActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnDActionPerformed
-    {//GEN-HEADEREND:event_btnDActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "d");
-    }//GEN-LAST:event_btnDActionPerformed
-
-    private void btnGActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnGActionPerformed
-    {//GEN-HEADEREND:event_btnGActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "g");
-    }//GEN-LAST:event_btnGActionPerformed
-
-    private void btnCActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnCActionPerformed
-    {//GEN-HEADEREND:event_btnCActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "c");
-    }//GEN-LAST:event_btnCActionPerformed
-
-    private void btnVActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVActionPerformed
-    {//GEN-HEADEREND:event_btnVActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "v");
-    }//GEN-LAST:event_btnVActionPerformed
-
-    private void btnBActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnBActionPerformed
-    {//GEN-HEADEREND:event_btnBActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "b");
-    }//GEN-LAST:event_btnBActionPerformed
-
-    private void btnJActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnJActionPerformed
-    {//GEN-HEADEREND:event_btnJActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "j");
-    }//GEN-LAST:event_btnJActionPerformed
-
-    private void btnQActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnQActionPerformed
-    {//GEN-HEADEREND:event_btnQActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "q");
-//      if (txfNome.isFocusOwner()) 
-//      {
-//             txfNome.setText(txfNome.getText() + "q");
-//      } else if (txfResposta1.isFocusOwner()) {
-//             txfResposta1.setText(txfResposta1.getText() + "q");
-//      }
-        
-//         if (txfNome.isFocusable()) {
-//             txfNome.setText(txfNome.getText() + "q");
-//         } else {
-//             txfResposta1.setText(txfResposta1.getText() + "q");
-//         }
-        
-//         btnQ.setText("q");
-//         
-//           Component focusedComponent = KeyboardFocusManager.getCurrentKeyboardFocusManager().getFocusOwner();
-//                if (focusedComponent instanceof JTextField) {
-//                    JTextField focusedTextField = (JTextField) focusedComponent;
-//                    focusedTextField.setText(focusedTextField.getText() + "q");
-//                 }
-//                    
- 
-
-    }//GEN-LAST:event_btnQActionPerformed
-   
-    private void btnWActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnWActionPerformed
-    {//GEN-HEADEREND:event_btnWActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "w");        
-
-    }//GEN-LAST:event_btnWActionPerformed
-
-    private void btnEActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnEActionPerformed
-    {//GEN-HEADEREND:event_btnEActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "e");
-    }//GEN-LAST:event_btnEActionPerformed
-
-    private void btnTActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnTActionPerformed
-    {//GEN-HEADEREND:event_btnTActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "t");
-    }//GEN-LAST:event_btnTActionPerformed
-
-    private void btnYActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnYActionPerformed
-    {//GEN-HEADEREND:event_btnYActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "y");
-    }//GEN-LAST:event_btnYActionPerformed
-
-    private void btnUActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnUActionPerformed
-    {//GEN-HEADEREND:event_btnUActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "u");
-    }//GEN-LAST:event_btnUActionPerformed
-
-    private void btnAActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnAActionPerformed
-    {//GEN-HEADEREND:event_btnAActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "a");
-    }//GEN-LAST:event_btnAActionPerformed
-
-    private void btnSActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnSActionPerformed
-    {//GEN-HEADEREND:event_btnSActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "s");
-    }//GEN-LAST:event_btnSActionPerformed
-
-    private void btnHActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnHActionPerformed
-    {//GEN-HEADEREND:event_btnHActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "h");
-    }//GEN-LAST:event_btnHActionPerformed
-
-    private void btnZActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnZActionPerformed
-    {//GEN-HEADEREND:event_btnZActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "z");
-    }//GEN-LAST:event_btnZActionPerformed
-
-    private void btnXActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnXActionPerformed
-    {//GEN-HEADEREND:event_btnXActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "x");
-    }//GEN-LAST:event_btnXActionPerformed
-
-    private void btnNActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnNActionPerformed
-    {//GEN-HEADEREND:event_btnNActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "n");
-    }//GEN-LAST:event_btnNActionPerformed
-
-    private void btnMActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnMActionPerformed
-    {//GEN-HEADEREND:event_btnMActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + "m");
-    }//GEN-LAST:event_btnMActionPerformed
-
-    private void btnApagarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnApagarActionPerformed
-    {//GEN-HEADEREND:event_btnApagarActionPerformed
-        txfResposta1.setText(txfResposta1.getText().substring(0, txfResposta1.getText().length() - 1));
-    }//GEN-LAST:event_btnApagarActionPerformed
-
-    private void btnEspaçoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnEspaçoActionPerformed
-    {//GEN-HEADEREND:event_btnEspaçoActionPerformed
-        txfResposta1.setText(txfResposta1.getText() + " ");
-    }//GEN-LAST:event_btnEspaçoActionPerformed
-
-    private void txfResposta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txfResposta1ActionPerformed
+    private void rbdFalsoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_rbdFalsoActionPerformed
+    {//GEN-HEADEREND:event_rbdFalsoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txfResposta1ActionPerformed
-
+    }//GEN-LAST:event_rbdFalsoActionPerformed
+   
     /**
      * @param args the command line arguments
      */
@@ -812,39 +213,12 @@ public class frmPergunta1 extends javax.swing.JDialog
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnA;
-    private javax.swing.JButton btnApagar;
-    private javax.swing.JButton btnB;
-    private javax.swing.JButton btnC;
-    private javax.swing.JButton btnD;
-    private javax.swing.JButton btnE;
-    private javax.swing.JButton btnEspaço;
-    private javax.swing.JButton btnF;
-    private javax.swing.JButton btnG;
-    private javax.swing.JButton btnH;
-    private javax.swing.JButton btnI;
-    private javax.swing.JButton btnJ;
-    private javax.swing.JButton btnK;
-    private javax.swing.JButton btnL;
-    private javax.swing.JButton btnM;
-    private javax.swing.JButton btnN;
-    private javax.swing.JButton btnO;
-    private javax.swing.JButton btnP;
     private javax.swing.JButton btnProximo;
-    private javax.swing.JButton btnQ;
-    private javax.swing.JButton btnR;
-    private javax.swing.JButton btnS;
-    private javax.swing.JButton btnT;
-    private javax.swing.JButton btnU;
-    private javax.swing.JButton btnV;
-    private javax.swing.JButton btnW;
-    private javax.swing.JButton btnX;
-    private javax.swing.JButton btnY;
-    private javax.swing.JButton btnZ;
+    private javax.swing.ButtonGroup gbtVF;
     private javax.swing.JLabel lblFundo;
     private javax.swing.JLabel lblPergunta1;
     private javax.swing.JLabel lblTitulo;
-    private javax.swing.JLabel lblVF;
-    private javax.swing.JTextField txfResposta1;
+    private javax.swing.JRadioButton rbdFalso;
+    private javax.swing.JRadioButton rbdVerdadeiro;
     // End of variables declaration//GEN-END:variables
 }
