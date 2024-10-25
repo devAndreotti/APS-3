@@ -33,8 +33,7 @@ public class frmPesquisaSatisfacao extends javax.swing.JDialog
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         gbtPesquisa = new javax.swing.ButtonGroup();
         btnRuim = new javax.swing.JButton();
@@ -55,10 +54,8 @@ public class frmPesquisaSatisfacao extends javax.swing.JDialog
         getContentPane().setLayout(null);
 
         btnRuim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ruim.jpg"))); // NOI18N
-        btnRuim.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        btnRuim.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRuimActionPerformed(evt);
             }
         });
@@ -66,10 +63,8 @@ public class frmPesquisaSatisfacao extends javax.swing.JDialog
         btnRuim.setBounds(440, 330, 170, 140);
 
         btnNeutro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/neutro.jpg"))); // NOI18N
-        btnNeutro.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        btnNeutro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNeutroActionPerformed(evt);
             }
         });
@@ -77,10 +72,8 @@ public class frmPesquisaSatisfacao extends javax.swing.JDialog
         btnNeutro.setBounds(650, 330, 170, 140);
 
         btnBom.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/bom.jpg"))); // NOI18N
-        btnBom.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        btnBom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBomActionPerformed(evt);
             }
         });
@@ -88,30 +81,29 @@ public class frmPesquisaSatisfacao extends javax.swing.JDialog
         btnBom.setBounds(850, 330, 170, 140);
 
         lblPergunta5.setBackground(new java.awt.Color(74, 43, 23));
-        lblPergunta5.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
-        lblPergunta5.setForeground(new java.awt.Color(74, 43, 23));
+        lblPergunta5.setFont(new java.awt.Font("Eras Bold ITC", 0, 36)); // NOI18N
+        lblPergunta5.setForeground(new java.awt.Color(164, 127, 85));
+        lblPergunta5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPergunta5.setText("Como você avaliaria sua experiência ? ");
         getContentPane().add(lblPergunta5);
-        lblPergunta5.setBounds(460, 190, 570, 60);
+        lblPergunta5.setBounds(380, 200, 710, 60);
 
         gbtPesquisa.add(rdbBom);
         getContentPane().add(rdbBom);
-        rdbBom.setBounds(930, 480, 28, 28);
+        rdbBom.setBounds(930, 480, 19, 20);
 
         gbtPesquisa.add(rdbNeutro);
-        rdbNeutro.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        rdbNeutro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rdbNeutroActionPerformed(evt);
             }
         });
         getContentPane().add(rdbNeutro);
-        rdbNeutro.setBounds(720, 480, 28, 28);
+        rdbNeutro.setBounds(720, 480, 19, 20);
 
         gbtPesquisa.add(rdbRuim);
         getContentPane().add(rdbRuim);
-        rdbRuim.setBounds(518, 480, 30, 28);
+        rdbRuim.setBounds(518, 480, 30, 20);
 
         lblTotalRespo.setBackground(new java.awt.Color(74, 43, 23));
         lblTotalRespo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -126,13 +118,11 @@ public class frmPesquisaSatisfacao extends javax.swing.JDialog
         lblResposta.setBounds(35, 588, 107, 0);
 
         btnContinuar.setBackground(new java.awt.Color(74, 43, 23));
-        btnContinuar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnContinuar.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         btnContinuar.setForeground(new java.awt.Color(164, 127, 85));
         btnContinuar.setText("Continuar");
-        btnContinuar.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        btnContinuar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnContinuarActionPerformed(evt);
             }
         });
@@ -154,7 +144,7 @@ public class frmPesquisaSatisfacao extends javax.swing.JDialog
         if(rdbBom.isSelected())
         {
             satisfacao = "bom";
-            Estaticos.SOMA++;
+            Estaticos.TOTALVISITANTES++;
 
             int somaAcertos = Estaticos.SOMAACERTOS;
             acertos = Integer.toString(somaAcertos);
@@ -172,7 +162,7 @@ public class frmPesquisaSatisfacao extends javax.swing.JDialog
         if(rdbNeutro.isSelected())
         {
             satisfacao = "neutro";
-            Estaticos.SOMA++;
+            Estaticos.TOTALVISITANTES++;
 
             int somaAcertos = Estaticos.SOMAACERTOS;
             acertos = Integer.toString(somaAcertos);
@@ -188,7 +178,7 @@ public class frmPesquisaSatisfacao extends javax.swing.JDialog
         if(rdbRuim.isSelected())
         {
             satisfacao = "ruim";
-            Estaticos.SOMA++;
+            Estaticos.TOTALVISITANTES++;
 
             int somaAcertos = Estaticos.SOMAACERTOS;
             acertos = Integer.toString(somaAcertos);

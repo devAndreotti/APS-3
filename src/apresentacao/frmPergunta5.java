@@ -53,38 +53,38 @@ public class frmPergunta5 extends javax.swing.JDialog
         getContentPane().setLayout(null);
 
         lblPergunta5.setBackground(new java.awt.Color(74, 43, 23));
-        lblPergunta5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        lblPergunta5.setForeground(new java.awt.Color(74, 43, 23));
+        lblPergunta5.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
+        lblPergunta5.setForeground(new java.awt.Color(164, 127, 85));
         lblPergunta5.setText("Pergunta 5: Em 2020 quantas sondas foram lançadas a marte? ");
         getContentPane().add(lblPergunta5);
-        lblPergunta5.setBounds(450, 290, 500, 21);
+        lblPergunta5.setBounds(420, 140, 590, 22);
 
         rbdP5A.setBackground(new java.awt.Color(164, 127, 85));
         gbtnP5.add(rbdP5A);
-        rbdP5A.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP5A.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP5A.setForeground(new java.awt.Color(74, 43, 23));
         rbdP5A.setText("a) 4");
         rbdP5A.setBorder(null);
         getContentPane().add(rbdP5A);
-        rbdP5A.setBounds(600, 370, 110, 21);
+        rbdP5A.setBounds(420, 190, 110, 22);
 
         rbdP5B.setBackground(new java.awt.Color(164, 127, 85));
         gbtnP5.add(rbdP5B);
-        rbdP5B.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP5B.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP5B.setForeground(new java.awt.Color(74, 43, 23));
         rbdP5B.setText("b) 1");
         rbdP5B.setBorder(null);
         getContentPane().add(rbdP5B);
-        rbdP5B.setBounds(600, 430, 110, 21);
+        rbdP5B.setBounds(420, 250, 110, 22);
 
         rbdP5C.setBackground(new java.awt.Color(164, 127, 85));
         gbtnP5.add(rbdP5C);
-        rbdP5C.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP5C.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP5C.setForeground(new java.awt.Color(74, 43, 23));
         rbdP5C.setText("c) 3");
         rbdP5C.setBorder(null);
         getContentPane().add(rbdP5C);
-        rbdP5C.setBounds(600, 490, 110, 21);
+        rbdP5C.setBounds(420, 310, 110, 22);
 
         lblTotalRespo.setBackground(new java.awt.Color(74, 43, 23));
         lblTotalRespo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -99,7 +99,7 @@ public class frmPergunta5 extends javax.swing.JDialog
         lblResposta.setBounds(35, 588, 107, 0);
 
         btnContinuar.setBackground(new java.awt.Color(74, 43, 23));
-        btnContinuar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnContinuar.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         btnContinuar.setForeground(new java.awt.Color(164, 127, 85));
         btnContinuar.setText("Continuar");
         btnContinuar.addActionListener(new java.awt.event.ActionListener()
@@ -125,46 +125,20 @@ public class frmPergunta5 extends javax.swing.JDialog
         if (rbdP5C.isSelected())
         {
            Estaticos.RESP5 = "acerto";
-            Estaticos.SOMAACERTOS++; 
-            frmPesquisaSatisfacao frmPS = new frmPesquisaSatisfacao(null, true);
-            this.setVisible(false);
-            frmPS.setVisible(true);             
-
+           Estaticos.SOMAACERTOS++; 
         }
         else
         {
             Estaticos.RESP5 = "erro";
-            frmPesquisaSatisfacao frmPS = new frmPesquisaSatisfacao(null, true);
-            this.setVisible(false);
-            frmPS.setVisible(true);       
-        } 
+        }
+        
+        frmPesquisaSatisfacao frmPS = new frmPesquisaSatisfacao(null, true);
+        this.setVisible(false);
+        frmPS.setVisible(true);          
         
         
+
         
-//        if (rbdP5C.isSelected())
-//        {
-//            resp5 = "acerto";
-//            Estaticos.SOMAACERTOS++; 
-//        }
-//        else
-//        {
-//            resp5 = "erro";
-//        }
-//        
-//        Estaticos.SOMA++;
-//        
-//        int somaAcertos = Estaticos.SOMAACERTOS;
-//        acertos = Integer.toString(somaAcertos);
-//        
-//        
-//        Controle controle = new Controle(Estaticos.NOME, Estaticos.RESP1, Estaticos.RESP2, Estaticos.RESP3, Estaticos.RESP4, resp5, acertos);
-//
-//        
-//
-//        
-//        frmPesquisaSatisfacao frmPS = new frmPesquisaSatisfacao(null, true);
-//        this.setVisible(false);
-//        frmPS.setVisible(true);
     }//GEN-LAST:event_btnContinuarActionPerformed
 
     /**

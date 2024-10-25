@@ -70,20 +70,20 @@ public class frmNome extends javax.swing.JDialog
         getContentPane().setLayout(null);
 
         txfNome.setBackground(new java.awt.Color(74, 43, 23));
-        txfNome.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        txfNome.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         txfNome.setForeground(new java.awt.Color(164, 127, 85));
         txfNome.setBorder(null);
         getContentPane().add(txfNome);
-        txfNome.setBounds(286, 267, 781, 21);
+        txfNome.setBounds(286, 267, 781, 28);
 
-        lblNome.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblNome.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         lblNome.setForeground(new java.awt.Color(164, 127, 85));
         lblNome.setText("Digite seu nome");
         getContentPane().add(lblNome);
-        lblNome.setBounds(286, 188, 506, 29);
+        lblNome.setBounds(286, 188, 506, 28);
 
         btnH.setBackground(new java.awt.Color(74, 43, 23));
-        btnH.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnH.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnH.setForeground(new java.awt.Color(164, 127, 85));
         btnH.setText("H");
         btnH.setBorder(null);
@@ -96,10 +96,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnH);
-        btnH.setBounds(698, 416, 57, 21);
+        btnH.setBounds(698, 416, 57, 28);
 
         btnJ.setBackground(new java.awt.Color(74, 43, 23));
-        btnJ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnJ.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnJ.setForeground(new java.awt.Color(164, 127, 85));
         btnJ.setText("J");
         btnJ.setBorder(null);
@@ -112,10 +112,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnJ);
-        btnJ.setBounds(773, 416, 57, 21);
+        btnJ.setBounds(773, 416, 57, 28);
 
         btnK.setBackground(new java.awt.Color(74, 43, 23));
-        btnK.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnK.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnK.setForeground(new java.awt.Color(164, 127, 85));
         btnK.setText("K");
         btnK.setBorder(null);
@@ -128,10 +128,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnK);
-        btnK.setBounds(848, 416, 57, 21);
+        btnK.setBounds(848, 416, 57, 28);
 
         btnA.setBackground(new java.awt.Color(74, 43, 23));
-        btnA.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnA.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnA.setForeground(new java.awt.Color(164, 127, 85));
         btnA.setText("A");
         btnA.setBorder(null);
@@ -144,10 +144,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnA);
-        btnA.setBounds(323, 416, 57, 21);
+        btnA.setBounds(323, 416, 57, 28);
 
         btnS.setBackground(new java.awt.Color(74, 43, 23));
-        btnS.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnS.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnS.setForeground(new java.awt.Color(164, 127, 85));
         btnS.setText("S");
         btnS.setBorder(null);
@@ -160,10 +160,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnS);
-        btnS.setBounds(398, 416, 57, 21);
+        btnS.setBounds(398, 416, 57, 28);
 
         btnD.setBackground(new java.awt.Color(74, 43, 23));
-        btnD.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnD.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnD.setForeground(new java.awt.Color(164, 127, 85));
         btnD.setText("D");
         btnD.setBorder(null);
@@ -176,10 +176,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnD);
-        btnD.setBounds(473, 416, 57, 21);
+        btnD.setBounds(473, 416, 57, 28);
 
         btnN.setBackground(new java.awt.Color(74, 43, 23));
-        btnN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnN.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnN.setForeground(new java.awt.Color(164, 127, 85));
         btnN.setText("N");
         btnN.setBorder(null);
@@ -192,10 +192,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnN);
-        btnN.setBounds(773, 469, 57, 21);
+        btnN.setBounds(773, 469, 57, 28);
 
         btnM.setBackground(new java.awt.Color(74, 43, 23));
-        btnM.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnM.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnM.setForeground(new java.awt.Color(164, 127, 85));
         btnM.setText("M");
         btnM.setBorder(null);
@@ -208,10 +208,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnM);
-        btnM.setBounds(848, 469, 57, 21);
+        btnM.setBounds(848, 469, 57, 28);
 
         btnZ.setBackground(new java.awt.Color(74, 43, 23));
-        btnZ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnZ.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnZ.setForeground(new java.awt.Color(164, 127, 85));
         btnZ.setText("Z");
         btnZ.setBorder(null);
@@ -224,10 +224,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnZ);
-        btnZ.setBounds(398, 469, 57, 21);
+        btnZ.setBounds(398, 469, 57, 28);
 
         btnX.setBackground(new java.awt.Color(74, 43, 23));
-        btnX.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnX.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnX.setForeground(new java.awt.Color(164, 127, 85));
         btnX.setText("X");
         btnX.setBorder(null);
@@ -240,10 +240,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnX);
-        btnX.setBounds(473, 469, 57, 21);
+        btnX.setBounds(473, 469, 57, 28);
 
         btnC.setBackground(new java.awt.Color(74, 43, 23));
-        btnC.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnC.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnC.setForeground(new java.awt.Color(164, 127, 85));
         btnC.setText("C");
         btnC.setBorder(null);
@@ -256,10 +256,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnC);
-        btnC.setBounds(548, 469, 57, 21);
+        btnC.setBounds(548, 469, 57, 28);
 
         btnV.setBackground(new java.awt.Color(74, 43, 23));
-        btnV.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnV.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnV.setForeground(new java.awt.Color(164, 127, 85));
         btnV.setText("V");
         btnV.setBorder(null);
@@ -272,10 +272,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnV);
-        btnV.setBounds(623, 469, 57, 21);
+        btnV.setBounds(623, 469, 57, 28);
 
         btnR.setBackground(new java.awt.Color(74, 43, 23));
-        btnR.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnR.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnR.setForeground(new java.awt.Color(164, 127, 85));
         btnR.setText("R");
         btnR.setBorder(null);
@@ -288,10 +288,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnR);
-        btnR.setBounds(511, 375, 57, 21);
+        btnR.setBounds(511, 375, 57, 28);
 
         btnB.setBackground(new java.awt.Color(74, 43, 23));
-        btnB.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnB.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnB.setForeground(new java.awt.Color(164, 127, 85));
         btnB.setText("B");
         btnB.setBorder(null);
@@ -304,10 +304,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnB);
-        btnB.setBounds(698, 469, 57, 21);
+        btnB.setBounds(698, 469, 57, 28);
 
         btnT.setBackground(new java.awt.Color(74, 43, 23));
-        btnT.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnT.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnT.setForeground(new java.awt.Color(164, 127, 85));
         btnT.setText("T");
         btnT.setBorder(null);
@@ -320,10 +320,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnT);
-        btnT.setBounds(586, 375, 57, 21);
+        btnT.setBounds(586, 375, 57, 28);
 
         btnApagar.setBackground(new java.awt.Color(74, 43, 23));
-        btnApagar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnApagar.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnApagar.setForeground(new java.awt.Color(164, 127, 85));
         btnApagar.setText("Backspace");
         btnApagar.setBorder(null);
@@ -335,10 +335,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnApagar);
-        btnApagar.setBounds(1065, 375, 134, 21);
+        btnApagar.setBounds(1065, 375, 134, 30);
 
         btnO.setBackground(new java.awt.Color(74, 43, 23));
-        btnO.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnO.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnO.setForeground(new java.awt.Color(164, 127, 85));
         btnO.setText("O");
         btnO.setBorder(null);
@@ -351,10 +351,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnO);
-        btnO.setBounds(886, 375, 57, 21);
+        btnO.setBounds(886, 375, 57, 28);
 
         btnEspaço.setBackground(new java.awt.Color(74, 43, 23));
-        btnEspaço.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnEspaço.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnEspaço.setForeground(new java.awt.Color(164, 127, 85));
         btnEspaço.setText("Space");
         btnEspaço.setBorder(null);
@@ -370,7 +370,7 @@ public class frmNome extends javax.swing.JDialog
         btnEspaço.setBounds(398, 528, 517, 36);
 
         btnP.setBackground(new java.awt.Color(74, 43, 23));
-        btnP.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnP.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnP.setForeground(new java.awt.Color(164, 127, 85));
         btnP.setText("P");
         btnP.setBorder(null);
@@ -383,10 +383,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnP);
-        btnP.setBounds(961, 375, 57, 21);
+        btnP.setBounds(961, 375, 57, 28);
 
         btnY.setBackground(new java.awt.Color(74, 43, 23));
-        btnY.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnY.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnY.setForeground(new java.awt.Color(164, 127, 85));
         btnY.setText("Y");
         btnY.setBorder(null);
@@ -399,10 +399,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnY);
-        btnY.setBounds(661, 375, 57, 21);
+        btnY.setBounds(661, 375, 57, 28);
 
         btnU.setBackground(new java.awt.Color(74, 43, 23));
-        btnU.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnU.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnU.setForeground(new java.awt.Color(164, 127, 85));
         btnU.setText("U");
         btnU.setBorder(null);
@@ -415,10 +415,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnU);
-        btnU.setBounds(736, 375, 57, 21);
+        btnU.setBounds(736, 375, 57, 28);
 
         btnI.setBackground(new java.awt.Color(74, 43, 23));
-        btnI.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnI.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnI.setForeground(new java.awt.Color(164, 127, 85));
         btnI.setText("I");
         btnI.setBorder(null);
@@ -431,10 +431,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnI);
-        btnI.setBounds(811, 375, 57, 21);
+        btnI.setBounds(811, 375, 57, 28);
 
         btnF.setBackground(new java.awt.Color(74, 43, 23));
-        btnF.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnF.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnF.setForeground(new java.awt.Color(164, 127, 85));
         btnF.setText("F");
         btnF.setBorder(null);
@@ -447,10 +447,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnF);
-        btnF.setBounds(548, 416, 57, 21);
+        btnF.setBounds(548, 416, 57, 28);
 
         btnQ.setBackground(new java.awt.Color(74, 43, 23));
-        btnQ.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnQ.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnQ.setForeground(new java.awt.Color(164, 127, 85));
         btnQ.setText("Q");
         btnQ.setBorder(null);
@@ -463,10 +463,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnQ);
-        btnQ.setBounds(286, 375, 57, 21);
+        btnQ.setBounds(286, 375, 57, 28);
 
         btnW.setBackground(new java.awt.Color(74, 43, 23));
-        btnW.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnW.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnW.setForeground(new java.awt.Color(164, 127, 85));
         btnW.setText("W");
         btnW.setBorder(null);
@@ -479,10 +479,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnW);
-        btnW.setBounds(361, 375, 57, 21);
+        btnW.setBounds(361, 375, 57, 28);
 
         btnE.setBackground(new java.awt.Color(74, 43, 23));
-        btnE.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnE.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnE.setForeground(new java.awt.Color(164, 127, 85));
         btnE.setText("E");
         btnE.setBorder(null);
@@ -495,10 +495,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnE);
-        btnE.setBounds(436, 375, 57, 21);
+        btnE.setBounds(436, 375, 57, 28);
 
         btnG.setBackground(new java.awt.Color(74, 43, 23));
-        btnG.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnG.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnG.setForeground(new java.awt.Color(164, 127, 85));
         btnG.setText("G");
         btnG.setBorder(null);
@@ -511,10 +511,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnG);
-        btnG.setBounds(623, 416, 57, 21);
+        btnG.setBounds(623, 416, 57, 28);
 
         btnL.setBackground(new java.awt.Color(74, 43, 23));
-        btnL.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnL.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnL.setForeground(new java.awt.Color(164, 127, 85));
         btnL.setText("L");
         btnL.setBorder(null);
@@ -527,10 +527,10 @@ public class frmNome extends javax.swing.JDialog
             }
         });
         getContentPane().add(btnL);
-        btnL.setBounds(923, 416, 57, 21);
+        btnL.setBounds(923, 416, 57, 28);
 
         btnProximo1.setBackground(new java.awt.Color(74, 43, 23));
-        btnProximo1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnProximo1.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnProximo1.setForeground(new java.awt.Color(164, 127, 85));
         btnProximo1.setText("Continuar");
         btnProximo1.setBorder(null);
@@ -545,7 +545,7 @@ public class frmNome extends javax.swing.JDialog
         getContentPane().add(btnProximo1);
         btnProximo1.setBounds(1180, 610, 157, 54);
 
-        lblFundo.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblFundo.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         lblFundo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
         lblFundo.setLabelFor(this);

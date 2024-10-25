@@ -52,38 +52,45 @@ public class frmPergunta3 extends javax.swing.JDialog
         getContentPane().setLayout(null);
 
         lblPergunta3.setBackground(new java.awt.Color(74, 43, 23));
-        lblPergunta3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblPergunta3.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         lblPergunta3.setForeground(new java.awt.Color(164, 127, 85));
         lblPergunta3.setText("Pergunta 3: Qual dessas sondas teve o primeiro drone de apoio a voar em Marte? ");
         getContentPane().add(lblPergunta3);
-        lblPergunta3.setBounds(440, 180, 630, 21);
+        lblPergunta3.setBounds(420, 140, 770, 22);
 
         rbdP3B.setBackground(new java.awt.Color(74, 43, 23));
         gbtnP3.add(rbdP3B);
-        rbdP3B.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP3B.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP3B.setForeground(new java.awt.Color(164, 127, 85));
         rbdP3B.setText("b) Curiosity");
         rbdP3B.setBorder(null);
         getContentPane().add(rbdP3B);
-        rbdP3B.setBounds(670, 330, 150, 21);
+        rbdP3B.setBounds(420, 270, 150, 22);
 
         rbdP3C.setBackground(new java.awt.Color(74, 43, 23));
         gbtnP3.add(rbdP3C);
-        rbdP3C.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP3C.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP3C.setForeground(new java.awt.Color(164, 127, 85));
         rbdP3C.setText("c) Opportunity");
         rbdP3C.setBorder(null);
+        rbdP3C.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                rbdP3CActionPerformed(evt);
+            }
+        });
         getContentPane().add(rbdP3C);
-        rbdP3C.setBounds(670, 390, 150, 21);
+        rbdP3C.setBounds(420, 330, 170, 22);
 
         rbdP3A.setBackground(new java.awt.Color(74, 43, 23));
         gbtnP3.add(rbdP3A);
-        rbdP3A.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP3A.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP3A.setForeground(new java.awt.Color(164, 127, 85));
         rbdP3A.setText("a) Perseverance");
         rbdP3A.setBorder(null);
         getContentPane().add(rbdP3A);
-        rbdP3A.setBounds(670, 270, 149, 21);
+        rbdP3A.setBounds(420, 210, 180, 22);
 
         lblTotalRespo.setBackground(new java.awt.Color(74, 43, 23));
         lblTotalRespo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -98,7 +105,7 @@ public class frmPergunta3 extends javax.swing.JDialog
         lblResposta.setBounds(35, 588, 107, 0);
 
         btnContinuar.setBackground(new java.awt.Color(74, 43, 23));
-        btnContinuar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnContinuar.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         btnContinuar.setForeground(new java.awt.Color(164, 127, 85));
         btnContinuar.setText("Continuar");
         btnContinuar.addActionListener(new java.awt.event.ActionListener()
@@ -111,6 +118,7 @@ public class frmPergunta3 extends javax.swing.JDialog
         getContentPane().add(btnContinuar);
         btnContinuar.setBounds(1240, 670, 150, 60);
 
+        lblFundo.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
         lblFundo.setAlignmentY(0.0F);
         getContentPane().add(lblFundo);
@@ -126,21 +134,21 @@ public class frmPergunta3 extends javax.swing.JDialog
         {
             Estaticos.RESP3 = "acerto";
             Estaticos.SOMAACERTOS++; 
-            frmPergunta4 frmP4 = new frmPergunta4(null, true);
-            this.setVisible(false);
-            frmP4.setVisible(true);           
-
         }
         else
         {
             Estaticos.RESP3 = "erro";
-            frmPergunta4 frmP4 = new frmPergunta4(null, true);
-            this.setVisible(false);
-            frmP4.setVisible(true);   
         } 
-
+        
+        frmConteudo3 frmC3= new frmConteudo3(null, true);
+        this.setVisible(false);
+        frmC3.setVisible(true); 
         
     }//GEN-LAST:event_btnContinuarActionPerformed
+
+    private void rbdP3CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbdP3CActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbdP3CActionPerformed
 
     /**
      * @param args the command line arguments

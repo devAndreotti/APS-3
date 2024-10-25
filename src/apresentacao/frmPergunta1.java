@@ -4,6 +4,8 @@
  */
 package apresentacao;
 
+import java.util.ArrayList;
+import java.util.List;
 import modelo.*;
 
 import javax.swing.JOptionPane;
@@ -23,6 +25,7 @@ public class frmPergunta1 extends javax.swing.JDialog
     {
         super(parent, modal);
         initComponents();
+        
     }
 
     /**
@@ -41,6 +44,7 @@ public class frmPergunta1 extends javax.swing.JDialog
         rbdFalso = new javax.swing.JRadioButton();
         btnProximo = new javax.swing.JButton();
         lblPergunta1 = new javax.swing.JLabel();
+        lblPergunta2 = new javax.swing.JLabel();
         lblFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -50,26 +54,26 @@ public class frmPergunta1 extends javax.swing.JDialog
         getContentPane().setLayout(null);
 
         lblTitulo.setBackground(new java.awt.Color(74, 43, 23));
-        lblTitulo.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblTitulo.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         lblTitulo.setForeground(new java.awt.Color(164, 127, 85));
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitulo.setText("Vamos começar o questionario!");
         lblTitulo.setToolTipText("");
         getContentPane().add(lblTitulo);
-        lblTitulo.setBounds(550, 70, 506, 29);
+        lblTitulo.setBounds(520, 150, 506, 28);
 
         rbdVerdadeiro.setBackground(new java.awt.Color(74, 43, 23));
         gbtVF.add(rbdVerdadeiro);
-        rbdVerdadeiro.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdVerdadeiro.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdVerdadeiro.setForeground(new java.awt.Color(164, 127, 85));
         rbdVerdadeiro.setText("Verdadeiro");
         rbdVerdadeiro.setFocusPainted(false);
         getContentPane().add(rbdVerdadeiro);
-        rbdVerdadeiro.setBounds(570, 360, 140, 29);
+        rbdVerdadeiro.setBounds(520, 340, 140, 30);
 
         rbdFalso.setBackground(new java.awt.Color(74, 43, 23));
         gbtVF.add(rbdFalso);
-        rbdFalso.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdFalso.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdFalso.setForeground(new java.awt.Color(164, 127, 85));
         rbdFalso.setText("Falso");
         rbdFalso.addActionListener(new java.awt.event.ActionListener()
@@ -80,10 +84,10 @@ public class frmPergunta1 extends javax.swing.JDialog
             }
         });
         getContentPane().add(rbdFalso);
-        rbdFalso.setBounds(890, 360, 100, 29);
+        rbdFalso.setBounds(840, 340, 100, 30);
 
         btnProximo.setBackground(new java.awt.Color(74, 43, 23));
-        btnProximo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnProximo.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         btnProximo.setForeground(new java.awt.Color(164, 127, 85));
         btnProximo.setText("Continuar");
         btnProximo.setBorder(null);
@@ -98,12 +102,21 @@ public class frmPergunta1 extends javax.swing.JDialog
         btnProximo.setBounds(1310, 640, 160, 70);
 
         lblPergunta1.setBackground(new java.awt.Color(74, 43, 23));
-        lblPergunta1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblPergunta1.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         lblPergunta1.setForeground(new java.awt.Color(196, 168, 136));
-        lblPergunta1.setText("Pergunta 1: A afirmação a seguir é verdadeira ou falsa?  A missão de exploração mais longa realizada por uma sonda veicular durou 6 anos. ");
+        lblPergunta1.setText("A missão de exploração mais longa realizada por uma sonda veicular durou 6 anos. ");
         lblPergunta1.setPreferredSize(new java.awt.Dimension(1105, 21));
         getContentPane().add(lblPergunta1);
-        lblPergunta1.setBounds(240, 240, 1130, 50);
+        lblPergunta1.setBounds(390, 260, 780, 50);
+
+        lblPergunta2.setBackground(new java.awt.Color(74, 43, 23));
+        lblPergunta2.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
+        lblPergunta2.setForeground(new java.awt.Color(196, 168, 136));
+        lblPergunta2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPergunta2.setText("Pergunta 1: A afirmação a seguir é verdadeira ou falsa? ");
+        lblPergunta2.setPreferredSize(new java.awt.Dimension(1105, 21));
+        getContentPane().add(lblPergunta2);
+        lblPergunta2.setBounds(390, 220, 770, 50);
 
         lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
         lblFundo.setAlignmentY(0.0F);
@@ -117,35 +130,21 @@ public class frmPergunta1 extends javax.swing.JDialog
     private void btnProximoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnProximoActionPerformed
     {//GEN-HEADEREND:event_btnProximoActionPerformed
         Estaticos.SOMAACERTOS = 0;
-//        Estaticos.NOME = txfNome.getText();
-//        Controle controle = new Controle(rbdFalso.getText());
+
+        
         if(rbdVerdadeiro.isSelected()){
             Estaticos.RESP1 = "acerto";
             Estaticos.SOMAACERTOS++; 
-            frmPergunta2 frmP2 = new frmPergunta2(null, true);
-            this.setVisible(false);
-            frmP2.setVisible(true);
         }
         else
         {
             Estaticos.RESP1 = "erro";
-            frmPergunta2 frmP2 = new frmPergunta2(null, true);
-            this.setVisible(false);
-            frmP2.setVisible(true);
         }
         
-                
-//        if (Estaticos.MENSAGEM.equals(""))
-//        {
-//             
-//           frmPergunta2 frmP2 = new frmPergunta2(null, true);
-//            this.setVisible(false);
-//            frmP2.setVisible(true);
-//        }
-//        else
-//        {
-//            JOptionPane.showMessageDialog(null, Estaticos.MENSAGEM);
-//        }
+        frmPergunta2 frmP2 = new frmPergunta2(null, true);
+        this.setVisible(false);
+        frmP2.setVisible(true);        
+
 
     }//GEN-LAST:event_btnProximoActionPerformed
 
@@ -217,6 +216,7 @@ public class frmPergunta1 extends javax.swing.JDialog
     private javax.swing.ButtonGroup gbtVF;
     private javax.swing.JLabel lblFundo;
     private javax.swing.JLabel lblPergunta1;
+    private javax.swing.JLabel lblPergunta2;
     private javax.swing.JLabel lblTitulo;
     private javax.swing.JRadioButton rbdFalso;
     private javax.swing.JRadioButton rbdVerdadeiro;

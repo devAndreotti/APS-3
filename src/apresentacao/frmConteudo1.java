@@ -38,7 +38,7 @@ public class frmConteudo1 extends javax.swing.JDialog {
         getContentPane().setLayout(null);
 
         btnContinuar.setBackground(new java.awt.Color(74, 43, 23));
-        btnContinuar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnContinuar.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnContinuar.setForeground(new java.awt.Color(164, 127, 85));
         btnContinuar.setText("Continuar");
         btnContinuar.setBorder(null);
@@ -52,7 +52,7 @@ public class frmConteudo1 extends javax.swing.JDialog {
         getContentPane().add(btnContinuar);
         btnContinuar.setBounds(1275, 633, 180, 70);
 
-        lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
+        lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Conteúdo 1.png"))); // NOI18N
         lblFundo.setAlignmentY(0.0F);
         getContentPane().add(lblFundo);
         lblFundo.setBounds(0, 0, 1525, 790);

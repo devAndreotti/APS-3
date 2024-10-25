@@ -19,7 +19,7 @@ public class frmInicial extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        lblTotalRespo.setText("Total de respondentes: " + Estaticos.SOMA);
+        lblTotalRespo.setText("Total de respondentes: " + Estaticos.TOTALVISITANTES);
     }
 
     /**
@@ -44,7 +44,7 @@ public class frmInicial extends javax.swing.JDialog {
         getContentPane().setLayout(null);
 
         btnContinuar.setBackground(new java.awt.Color(74, 43, 23));
-        btnContinuar.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnContinuar.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnContinuar.setForeground(new java.awt.Color(164, 127, 85));
         btnContinuar.setText("Continuar");
         btnContinuar.setAlignmentX(762.0F);
@@ -59,14 +59,17 @@ public class frmInicial extends javax.swing.JDialog {
         getContentPane().add(btnContinuar);
         btnContinuar.setBounds(700, 520, 150, 50);
 
-        lblTotalRespo.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        lblTotalRespo.setForeground(new java.awt.Color(255, 255, 255));
+        lblTotalRespo.setBackground(new java.awt.Color(74, 43, 23));
+        lblTotalRespo.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
+        lblTotalRespo.setForeground(new java.awt.Color(164, 127, 85));
+        lblTotalRespo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTotalRespo.setText("Total de respondentes : 0");
+        lblTotalRespo.setOpaque(true);
         getContentPane().add(lblTotalRespo);
-        lblTotalRespo.setBounds(680, 680, 260, 40);
+        lblTotalRespo.setBounds(650, 680, 250, 40);
 
         btnSair.setBackground(new java.awt.Color(74, 43, 23));
-        btnSair.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnSair.setFont(new java.awt.Font("Eras Bold ITC", 0, 24)); // NOI18N
         btnSair.setForeground(new java.awt.Color(164, 127, 85));
         btnSair.setText("Sair");
         btnSair.setAlignmentX(762.0F);

@@ -5,6 +5,7 @@
 package apresentacao;
 
 
+import java.util.List;
 import modelo.*;
 
 /**
@@ -52,38 +53,38 @@ public class frmPergunta2 extends javax.swing.JDialog
         getContentPane().setLayout(null);
 
         lblPergunta2.setBackground(new java.awt.Color(74, 43, 23));
-        lblPergunta2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lblPergunta2.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         lblPergunta2.setForeground(new java.awt.Color(164, 127, 85));
         lblPergunta2.setText("Pergunta 2: Qual foi o primeiro rover a pousar em Marte? ");
         getContentPane().add(lblPergunta2);
-        lblPergunta2.setBounds(470, 170, 470, 21);
+        lblPergunta2.setBounds(420, 140, 550, 22);
 
         rbdP2A.setBackground(new java.awt.Color(74, 43, 23));
         gbtnP2.add(rbdP2A);
-        rbdP2A.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP2A.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP2A.setForeground(new java.awt.Color(164, 127, 85));
         rbdP2A.setText("a) Spirit");
         rbdP2A.setBorder(null);
         getContentPane().add(rbdP2A);
-        rbdP2A.setBounds(600, 300, 110, 21);
+        rbdP2A.setBounds(420, 210, 110, 22);
 
         rbdP2B.setBackground(new java.awt.Color(74, 43, 23));
         gbtnP2.add(rbdP2B);
-        rbdP2B.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP2B.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP2B.setForeground(new java.awt.Color(164, 127, 85));
         rbdP2B.setText("b) Perseverance");
         rbdP2B.setBorder(null);
         getContentPane().add(rbdP2B);
-        rbdP2B.setBounds(600, 350, 149, 21);
+        rbdP2B.setBounds(420, 260, 180, 22);
 
         rbdP2C.setBackground(new java.awt.Color(74, 43, 23));
         gbtnP2.add(rbdP2C);
-        rbdP2C.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP2C.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP2C.setForeground(new java.awt.Color(164, 127, 85));
         rbdP2C.setText("c) Sojurner");
         rbdP2C.setBorder(null);
         getContentPane().add(rbdP2C);
-        rbdP2C.setBounds(600, 410, 116, 21);
+        rbdP2C.setBounds(420, 310, 140, 22);
 
         lblTotalRespo.setBackground(new java.awt.Color(74, 43, 23));
         lblTotalRespo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -98,7 +99,7 @@ public class frmPergunta2 extends javax.swing.JDialog
         lblResposta.setBounds(35, 588, 107, 0);
 
         btnContinuar.setBackground(new java.awt.Color(74, 43, 23));
-        btnContinuar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnContinuar.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         btnContinuar.setForeground(new java.awt.Color(164, 127, 85));
         btnContinuar.setText("Continuar");
         btnContinuar.addActionListener(new java.awt.event.ActionListener()
@@ -111,6 +112,7 @@ public class frmPergunta2 extends javax.swing.JDialog
         getContentPane().add(btnContinuar);
         btnContinuar.setBounds(1240, 670, 150, 60);
 
+        lblFundo.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
         lblFundo.setAlignmentY(0.0F);
         getContentPane().add(lblFundo);
@@ -121,66 +123,22 @@ public class frmPergunta2 extends javax.swing.JDialog
 
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnContinuarActionPerformed
     {//GEN-HEADEREND:event_btnContinuarActionPerformed
-         if (rbdP2C.isSelected())
+         
+        if (rbdP2C.isSelected())
         {
             Estaticos.RESP2 = "acerto";
-            Estaticos.SOMAACERTOS++; 
-            frmConteudo3 frmC3 = new frmConteudo3(null, true);
-            this.setVisible(false);
-            frmC3.setVisible(true);           
-
+            Estaticos.SOMAACERTOS++;          
         }
         else
         {
             Estaticos.RESP2 = "erro";
-            frmConteudo3 frmC3 = new frmConteudo3(null, true);
-            this.setVisible(false);
-            frmC3.setVisible(true);     
         } 
-         
+        frmPergunta3 frmP3= new frmPergunta3(null, true);
+        this.setVisible(false);
+        frmP3.setVisible(true);          
          
       
-//        
-//        if (rbdP3A.isSelected())
-//        {
-//            resp3 = "acerto";
-//            Estaticos.SOMAACERTOS++; 
-//        }
-//        else
-//        {
-//            resp3 = "erro";
-//        } 
-//        
-//        
-//        if (rbdP4C.isSelected())
-//        {
-//            resp4 = "acerto";
-//            Estaticos.SOMAACERTOS++; 
-//        }
-//        else
-//        {
-//            resp4 = "erro";
-//        } 
-//        
-//        
-//        if (rbdP5C.isSelected())
-//        {
-//            resp5 = "acerto";
-//            Estaticos.SOMAACERTOS++; 
-//        }
-//        else
-//        {
-//            resp5 = "erro";
-//        }    
-//        
-//        Controle controle = new Controle(Estaticos.NOME, Estaticos.RESP1, resp2, resp3, resp4, resp5);
-//
-//        Estaticos.SOMA++;
-//
-//        
-//        frmFinal frmF = new frmFinal(null, true);
-//        this.setVisible(false);
-//        frmF.setVisible(true);
+
     }//GEN-LAST:event_btnContinuarActionPerformed
 
     /**

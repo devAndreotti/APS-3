@@ -30,6 +30,10 @@ public class frmConteudo3 extends javax.swing.JDialog {
     {
 
         btnContinuar = new javax.swing.JButton();
+        lblPerseverance = new javax.swing.JLabel();
+        lblCuriosity = new javax.swing.JLabel();
+        lblImagemPerseverance = new javax.swing.JLabel();
+        lblimagemCuriosity = new javax.swing.JLabel();
         lblFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -38,7 +42,7 @@ public class frmConteudo3 extends javax.swing.JDialog {
         getContentPane().setLayout(null);
 
         btnContinuar.setBackground(new java.awt.Color(74, 43, 23));
-        btnContinuar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnContinuar.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         btnContinuar.setForeground(new java.awt.Color(164, 127, 85));
         btnContinuar.setText("Continuar");
         btnContinuar.setBorder(null);
@@ -52,6 +56,27 @@ public class frmConteudo3 extends javax.swing.JDialog {
         getContentPane().add(btnContinuar);
         btnContinuar.setBounds(1275, 633, 180, 70);
 
+        lblPerseverance.setFont(new java.awt.Font("Eras Bold ITC", 0, 36)); // NOI18N
+        lblPerseverance.setForeground(new java.awt.Color(74, 43, 23));
+        lblPerseverance.setText("Perseverance em exposição");
+        getContentPane().add(lblPerseverance);
+        lblPerseverance.setBounds(920, 420, 510, 50);
+
+        lblCuriosity.setFont(new java.awt.Font("Eras Bold ITC", 0, 36)); // NOI18N
+        lblCuriosity.setForeground(new java.awt.Color(74, 43, 23));
+        lblCuriosity.setText("Curiosity em exposição");
+        getContentPane().add(lblCuriosity);
+        lblCuriosity.setBounds(200, 270, 430, 50);
+
+        lblImagemPerseverance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/obras2.jpg"))); // NOI18N
+        lblImagemPerseverance.setText("jLabel1");
+        getContentPane().add(lblImagemPerseverance);
+        lblImagemPerseverance.setBounds(890, 100, 560, 320);
+
+        lblimagemCuriosity.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/obras1.jpg"))); // NOI18N
+        getContentPane().add(lblimagemCuriosity);
+        lblimagemCuriosity.setBounds(70, 330, 670, 380);
+
         lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/FundoGeral.jpg"))); // NOI18N
         lblFundo.setAlignmentY(0.0F);
         getContentPane().add(lblFundo);
@@ -61,10 +86,9 @@ public class frmConteudo3 extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
-        // TODO add your handling code here:
-        frmConteudo4 frmC4 = new frmConteudo4(null,true);
-        this.setVisible(false);
-        frmC4.setVisible(true);
+            frmPergunta4 frmP4 = new frmPergunta4(null, true);
+            this.setVisible(false);
+            frmP4.setVisible(true);  
     }//GEN-LAST:event_btnContinuarActionPerformed
 
     /**
@@ -114,6 +138,10 @@ public class frmConteudo3 extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnContinuar;
+    private javax.swing.JLabel lblCuriosity;
     private javax.swing.JLabel lblFundo;
+    private javax.swing.JLabel lblImagemPerseverance;
+    private javax.swing.JLabel lblPerseverance;
+    private javax.swing.JLabel lblimagemCuriosity;
     // End of variables declaration//GEN-END:variables
 }

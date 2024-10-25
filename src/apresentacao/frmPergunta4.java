@@ -51,33 +51,33 @@ public class frmPergunta4 extends javax.swing.JDialog
         getContentPane().setLayout(null);
 
         lblPergunta4.setBackground(new java.awt.Color(74, 43, 23));
-        lblPergunta4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        lblPergunta4.setForeground(new java.awt.Color(74, 43, 23));
+        lblPergunta4.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
+        lblPergunta4.setForeground(new java.awt.Color(164, 127, 85));
         lblPergunta4.setText("Pergunta 4: Qual foi a região designada para o pouso da sonda Curiosity em 2012? ");
         getContentPane().add(lblPergunta4);
-        lblPergunta4.setBounds(380, 260, 630, 21);
+        lblPergunta4.setBounds(420, 140, 780, 22);
 
         rbdP4A.setBackground(new java.awt.Color(164, 127, 85));
         gbtnP4.add(rbdP4A);
-        rbdP4A.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP4A.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP4A.setForeground(new java.awt.Color(74, 43, 23));
         rbdP4A.setText("a) Cratera de Jazero");
         rbdP4A.setBorder(null);
         getContentPane().add(rbdP4A);
-        rbdP4A.setBounds(600, 330, 190, 21);
+        rbdP4A.setBounds(420, 210, 220, 22);
 
         rbdP4B.setBackground(new java.awt.Color(164, 127, 85));
         gbtnP4.add(rbdP4B);
-        rbdP4B.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP4B.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP4B.setForeground(new java.awt.Color(74, 43, 23));
         rbdP4B.setText("b) Ares Vallis");
         rbdP4B.setBorder(null);
         getContentPane().add(rbdP4B);
-        rbdP4B.setBounds(600, 400, 160, 21);
+        rbdP4B.setBounds(420, 280, 160, 22);
 
         rbdP4C.setBackground(new java.awt.Color(164, 127, 85));
         gbtnP4.add(rbdP4C);
-        rbdP4C.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        rbdP4C.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         rbdP4C.setForeground(new java.awt.Color(74, 43, 23));
         rbdP4C.setText("c) Cratera Gale");
         rbdP4C.setBorder(null);
@@ -89,7 +89,7 @@ public class frmPergunta4 extends javax.swing.JDialog
             }
         });
         getContentPane().add(rbdP4C);
-        rbdP4C.setBounds(600, 460, 170, 21);
+        rbdP4C.setBounds(420, 340, 170, 22);
 
         lblTotalRespo.setBackground(new java.awt.Color(74, 43, 23));
         lblTotalRespo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -104,7 +104,7 @@ public class frmPergunta4 extends javax.swing.JDialog
         lblResposta.setBounds(35, 588, 107, 0);
 
         btnContinuar.setBackground(new java.awt.Color(74, 43, 23));
-        btnContinuar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnContinuar.setFont(new java.awt.Font("Eras Bold ITC", 0, 18)); // NOI18N
         btnContinuar.setForeground(new java.awt.Color(164, 127, 85));
         btnContinuar.setText("Continuar");
         btnContinuar.addActionListener(new java.awt.event.ActionListener()
@@ -129,23 +129,21 @@ public class frmPergunta4 extends javax.swing.JDialog
     {//GEN-HEADEREND:event_btnContinuarActionPerformed
 
         
-        
         if (rbdP4C.isSelected())
         {
            Estaticos.RESP4 = "acerto";
-            Estaticos.SOMAACERTOS++; 
-            frmPergunta5 frmP5 = new frmPergunta5(null, true);
-            this.setVisible(false);
-            frmP5.setVisible(true);           
-
+           Estaticos.SOMAACERTOS++;            
         }
         else
         {
-            Estaticos.RESP4 = "erro";
-            frmPergunta5 frmP5 = new frmPergunta5(null, true);
-            this.setVisible(false);
-            frmP5.setVisible(true);       
-        } 
+            Estaticos.RESP4 = "erro";   
+        }  
+        
+        frmPergunta5 frmP5 = new frmPergunta5(null, true);
+        this.setVisible(false);
+        frmP5.setVisible(true); 
+        
+ 
         
   
     }//GEN-LAST:event_btnContinuarActionPerformed

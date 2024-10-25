@@ -41,8 +41,7 @@ public class Visitantes extends AbsPropriedades
     @Override
     public String toString() 
     {
-        return "Nome: " + nome + ", Resposta 1: " + resp1 + ", Resposta 2: " + resp2 +
-                 ", Resposta 3: " + resp3 + ", Resposta 4: " + resp4 + ", Resposta 5: " + resp5 + 
+        return "Nome: " + nome  + 
                 ", Total de acerto: "  + acertos;
     }
     
@@ -64,9 +63,9 @@ public class Visitantes extends AbsPropriedades
             }
         }
         // Calcular as porcentagens
-        double porcentagemBom = (bom / (double) Estaticos.SOMA) * 100;
-        double porcentagemNeutro = (neutro / (double) Estaticos.SOMA) * 100;
-        double porcentagemeRuim = (ruim / (double) Estaticos.SOMA) * 100;
+        double porcentagemBom = (bom / (double) Estaticos.TOTALVISITANTES) * 100;
+        double porcentagemNeutro = (neutro / (double) Estaticos.TOTALVISITANTES) * 100;
+        double porcentagemeRuim = (ruim / (double) Estaticos.TOTALVISITANTES) * 100;
         
         // Retornar formatado
         StringBuilder sb = new StringBuilder();
@@ -91,7 +90,7 @@ public class Visitantes extends AbsPropriedades
 
         int totalVisitantes = Visitantes.getListaVisitantes().size();
 
-        // Iterar sobre a lista de visitantes para contar os acertos
+       
         for (Visitantes visitante : Visitantes.getListaVisitantes()) {
             if (visitante.resp1.equalsIgnoreCase("acerto")) {
                 totalResp1++;
